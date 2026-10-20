@@ -4,176 +4,226 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>Guia de Bolso · IRONMAN 70.3 Aracaju 2026 | Equipe Villarinho</title>
-<meta name="description" content="Guia de Bolso da Equipe Villarinho para o IRONMAN 70.3 Aracaju 2026: percursos, agenda, checklist, manual da prova, dicas e parceiros.">
-<meta name="theme-color" content="#F7F5F2">
+<meta name="description" content="Guia de Bolso da Equipe Villarinho para o IRONMAN 70.3 Aracaju 2026: percursos, agenda, checklist, manual da prova, dicas e atletas da equipe.">
 <meta name="robots" content="noindex">
+<meta name="theme-color" content="#000000">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 :root{
-  --papel:#F7F5F2;--branco:#FFFFFF;--tinta:#16110F;--tinta-2:#6E6560;--tinta-3:#9A928B;
-  --vinho:#8E1B20;--vinho-claro:#B8262C;--dourado:#9C7A33;--linha:#E5DFD7;--linha-forte:#D5CDC2;
-  --ok:#2F7D4F;--r:5px;
+  --vermelho:#ED1C24;--preto:#000000;--branco:#FFFFFF;--cinza-logo:#BCBEC0;
+  --surface:#F4F4F5;--surface-raised:#FFFFFF;--faixa-escura:#000000;
+  --ink:#231F20;--ink-muted:#5F6168;--line:#E2E2E5;
+  --accent:#ED1C24;--on-accent:#FFFFFF;
+  --esporte-corrida:#ED1C24;--esporte-bike:#231F20;--esporte-natacao:#8E9197;
+  --ok:#2F7D4F;
+  --sombra-cartao:0 1px 2px rgba(0,0,0,.06),0 6px 16px rgba(0,0,0,.06);
+  --font-display:"Montserrat","Helvetica Neue",Arial,sans-serif;
+  --font-text:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --radius-md:12px;--radius-lg:16px;--radius-pill:999px;
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --surface:#0E0F11;--surface-raised:#1B1C1F;--faixa-escura:#000000;
+    --ink:#F5F5F6;--ink-muted:#B4B6BB;--line:#2E3035;
+    --accent:#F0283A;--esporte-corrida:#F0283A;--esporte-bike:#F5F5F6;--esporte-natacao:#A9ACB1;
+    --sombra-cartao:none;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --surface:#0E0F11;--surface-raised:#1B1C1F;--faixa-escura:#000000;
+  --ink:#F5F5F6;--ink-muted:#B4B6BB;--line:#2E3035;
+  --accent:#F0283A;--esporte-corrida:#F0283A;--esporte-bike:#F5F5F6;--esporte-natacao:#A9ACB1;
+  --sombra-cartao:none;
 }
 *{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
 html{scroll-behavior:smooth}
-body{background:var(--papel);color:var(--tinta);font-family:"DM Sans",system-ui,-apple-system,sans-serif;font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
-::selection{background:var(--vinho);color:#fff}
-a{color:var(--vinho)}
-.wrap{max-width:720px;margin:0 auto;padding:0 22px}
+body{background:var(--surface);color:var(--ink);font-family:var(--font-text);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.wrap{max-width:720px;margin:0 auto;padding:0 16px}
+@media(min-width:600px){.wrap{padding:0 24px}}
+.num{font-variant-numeric:tabular-nums}
 
-.hero{background:var(--branco);border-bottom:1px solid var(--linha);padding:38px 0 30px;position:relative;overflow:hidden}
-.hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:3px;background:linear-gradient(90deg,var(--vinho) 0 33.3%,var(--tinta) 33.3% 66.6%,var(--dourado) 66.6% 100%)}
-.eyebrow{font-size:11px;font-weight:700;letter-spacing:.26em;text-transform:uppercase;color:var(--vinho);display:block;margin-bottom:14px}
-.hero h1{font-family:"Bebas Neue",sans-serif;font-weight:400;font-size:clamp(46px,12vw,78px);line-height:.9;letter-spacing:.01em;text-transform:uppercase;margin-bottom:10px}
-.hero h1 em{font-style:normal;color:var(--vinho);display:block}
-.hero .quando{font-size:14.5px;color:var(--tinta-2);border-left:2px solid var(--vinho);padding-left:12px;margin:16px 0 22px}
-.dist{display:flex;border-top:1px solid var(--linha);border-bottom:1px solid var(--linha)}
-.dist div{flex:1;padding:14px 0;text-align:center;border-left:1px solid var(--linha)}
-.dist div:first-child{border-left:0}
-.dist .v{font-family:"Bebas Neue",sans-serif;font-size:27px;line-height:1}
-.dist .k{font-size:9.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--tinta-3)}
-.count{display:flex;gap:22px;margin-top:20px;align-items:baseline}
-.count .n{font-family:"Bebas Neue",sans-serif;font-size:34px;line-height:1}
-.count .l{font-size:9.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--tinta-3)}
+/* rótulo oficial: caixa alta, cinza, traço vermelho */
+.rotulo{display:inline-flex;align-items:center;gap:8px;font-family:var(--font-display);font-size:12px;line-height:16px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-muted)}
+.rotulo::before{content:"";width:24px;height:3px;border-radius:2px;background:var(--accent);flex:none}
 
-nav{position:sticky;top:0;z-index:50;background:rgba(247,245,242,.95);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--linha)}
-.tabs{display:grid;grid-template-columns:repeat(4,1fr);max-width:720px;margin:0 auto;padding:0 14px}
-.tab{background:none;border:0;cursor:pointer;font-family:"DM Sans",sans-serif;font-size:11px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--tinta-3);padding:13px 2px 11px;text-align:center;line-height:1.2;border-bottom:2px solid transparent;transition:color .18s,border-color .18s}
-.tab:nth-child(n+5){border-top:1px solid var(--linha)}
-@media(min-width:520px){.tabs{padding:0 22px}.tab{font-size:12px;letter-spacing:.11em;padding:14px 4px 12px}}
-.tab:hover{color:var(--tinta)}
-.tab.on{color:var(--tinta);border-bottom-color:var(--vinho)}
-.tab:focus-visible{outline:2px solid var(--vinho);outline-offset:3px}
+/* HERO */
+.hero{background:var(--faixa-escura);color:var(--branco);position:relative;overflow:hidden;padding:28px 0 32px}
+.hero .lines{position:absolute;right:-80px;top:0;bottom:0;width:70%;opacity:.28;pointer-events:none}
+@media(min-width:720px){.hero .lines{opacity:.85;width:55%}}
+.hero .wrap{position:relative;z-index:1}
+.hero .logo{width:150px;height:auto;display:block;margin-bottom:36px}
+.hero .rotulo{color:#D9DADC}
+.hero h1{font-family:var(--font-display);font-weight:900;font-size:clamp(40px,11vw,68px);line-height:.95;letter-spacing:-.02em;margin:14px 0 16px;max-width:11ch}
+.hero .quando{color:var(--cinza-logo);font-size:15.5px;max-width:46ch}
+.dist{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:26px}
+.dist>div{border:1px solid #2E3035;border-radius:var(--radius-md);padding:12px 10px}
+.dist .k{display:flex;align-items:center;gap:6px;font-family:var(--font-display);font-size:10.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--cinza-logo)}
+.dist .k i{width:8px;height:8px;border-radius:50%}
+.dist .v{font-family:var(--font-display);font-weight:800;font-size:22px;margin-top:4px;font-variant-numeric:tabular-nums}
+.count{display:flex;gap:26px;margin-top:22px;align-items:flex-end}
+.count .n{font-family:var(--font-display);font-weight:900;font-size:40px;line-height:1;color:var(--vermelho);font-variant-numeric:tabular-nums}
+.count .l{font-family:var(--font-display);font-size:10.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--cinza-logo);margin-top:4px}
 
-section{display:none;padding:34px 0 70px}
+/* NAV */
+nav{position:sticky;top:0;z-index:50;background:color-mix(in srgb,var(--surface) 90%,transparent);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.tabs{display:grid;grid-template-columns:repeat(4,1fr);max-width:720px;margin:0 auto;padding:0 10px}
+.tab{background:none;border:0;cursor:pointer;font-family:var(--font-display);font-size:11.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-muted);padding:13px 2px 11px;text-align:center;border-bottom:3px solid transparent}
+.tab:nth-child(n+5){border-top:1px solid var(--line)}
+@media(min-width:520px){.tab{font-size:12.5px;letter-spacing:.1em}}
+.tab.on{color:var(--ink);border-bottom-color:var(--accent)}
+.tab:focus-visible{outline:3px solid var(--ink);outline-offset:-3px}
+
+/* SEÇÕES */
+section{display:none;padding:36px 0 72px}
 section.on{display:block;animation:fade .3s ease}
 @keyframes fade{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){section.on{animation:none}}
-h2{font-family:"Bebas Neue",sans-serif;font-weight:400;font-size:40px;line-height:1;letter-spacing:.02em}
-.h2sub{color:var(--tinta-2);font-size:14px;margin:6px 0 28px;max-width:52ch}
-h3{font-size:11px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--vinho);margin:34px 0 12px;padding-bottom:8px;border-bottom:1px solid var(--linha)}
-.card{background:var(--branco);border:1px solid var(--linha);border-radius:var(--r);padding:20px;margin-bottom:12px}
-.card.acc{border-left:3px solid var(--vinho)}
-.card.team{border-left:3px solid var(--dourado)}
-.muted{color:var(--tinta-2)}
-.small{font-size:13.5px}
-.tiny{font-size:12px;color:var(--tinta-3)}
-.btn{display:inline-flex;align-items:center;gap:7px;background:var(--vinho);color:#fff;text-decoration:none;font-size:12.5px;font-weight:700;letter-spacing:.06em;padding:10px 16px;border-radius:var(--r);border:1px solid var(--vinho);transition:background .18s;margin:4px 6px 4px 0}
-.btn:hover{background:var(--vinho-claro)}
-.btn.o{background:transparent;color:var(--tinta);border-color:var(--linha-forte)}
-.btn.o:hover{background:#fff;border-color:var(--tinta)}
-.btn.off{background:transparent;color:var(--tinta-3);border:1px dashed var(--linha-forte);cursor:default}
-.tag{display:inline-block;font-size:9.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;padding:3px 8px;border-radius:3px;vertical-align:middle}
-.tag.eq{background:#F5EEDC;color:#7A5E20;border:1px solid #E4D5AE}
-.tag.al{background:#FBEAEA;color:var(--vinho);border:1px solid #EFC9CA}
-.tag.tbd{background:#F1EEEA;color:var(--tinta-2);border:1px solid var(--linha-forte)}
-
+h2{font-family:var(--font-display);font-weight:800;font-size:32px;line-height:1.05;letter-spacing:-.01em;margin-top:10px}
+.h2sub{color:var(--ink-muted);font-size:15px;margin:8px 0 28px;max-width:56ch}
+h3{font-family:var(--font-display);font-weight:700;font-size:19px;margin:36px 0 12px}
+.card{background:var(--surface-raised);border-radius:var(--radius-lg);box-shadow:var(--sombra-cartao);border:1px solid transparent;padding:22px;margin-bottom:12px}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .card{border-color:var(--line)}}
+:root[data-theme="dark"] .card{border-color:var(--line)}
+.card.escuro{background:var(--faixa-escura);color:var(--branco);box-shadow:none;border-color:transparent}
+.card.escuro .muted{color:var(--cinza-logo)}
+.card b,.card .tt{font-family:var(--font-display);font-weight:700;font-size:16px}
+.muted{color:var(--ink-muted)}
+.small{font-size:14px}
+.tiny{font-size:12.5px;color:var(--ink-muted)}
+.lbl{font-family:var(--font-display);font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-muted);margin-bottom:6px}
 .grid{display:grid;grid-template-columns:1fr;gap:12px}
 @media(min-width:600px){.grid{grid-template-columns:1fr 1fr}}
 .grid .card{margin:0}
-.lbl{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--tinta-3);margin-bottom:6px}
-.aviso{background:#FCF6F1;border:1px solid #EBDCCF;border-radius:var(--r);padding:18px 20px;margin:20px 0}
 
-.pc-head{display:flex;align-items:baseline;justify-content:space-between;gap:10px;border-bottom:1px solid var(--linha);padding-bottom:10px;margin-bottom:14px}
-.pc-head .nm{font-family:"Bebas Neue",sans-serif;font-size:30px;letter-spacing:.03em}
-.pc-head .km{font-family:"Bebas Neue",sans-serif;font-size:30px;color:var(--vinho)}
-.dl{display:flex;gap:26px;flex-wrap:wrap;margin-bottom:14px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;height:44px;padding:0 18px;border-radius:var(--radius-md);border:2px solid transparent;font-family:var(--font-display);font-size:14px;font-weight:700;text-decoration:none;cursor:pointer;margin:4px 6px 4px 0}
+.btn-principal{background:var(--accent);color:var(--on-accent)}
+.btn-principal:hover{filter:brightness(.92)}
+.btn-sec{background:transparent;color:var(--ink);border-color:var(--ink)}
+.card.escuro .btn-sec{color:var(--branco);border-color:var(--branco)}
+.btn-off{background:transparent;color:var(--ink-muted);border:2px dashed var(--line);cursor:default}
+.tag{display:inline-flex;align-items:center;gap:6px;height:26px;padding:0 11px;border-radius:var(--radius-pill);border:1px solid var(--line);background:var(--surface-raised);color:var(--ink);font-family:var(--font-display);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;vertical-align:middle}
+.tag::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--ink-muted)}
+.tag.obr::before{background:var(--accent)}
+.tag.nat::before{background:var(--esporte-natacao)}
+.tag.bike::before{background:var(--esporte-bike)}
+.tag.cor::before{background:var(--esporte-corrida)}
+.lk{display:inline-flex;align-items:center;height:32px;padding:0 12px;font-family:var(--font-display);font-size:12.5px;font-weight:700;text-decoration:none;color:var(--ink);border:1px solid var(--line);border-radius:var(--radius-pill);margin:8px 6px 0 0}
+.lk:hover{border-color:var(--ink)}
+
+/* Percursos */
+.pc-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:14px}
+.pc-head .nm{font-family:var(--font-display);font-weight:800;font-size:24px}
+.pc-head .km{font-family:var(--font-display);font-weight:800;font-size:24px;font-variant-numeric:tabular-nums}
+.mapa{border-radius:var(--radius-md);overflow:hidden;border:1px solid var(--line);margin-bottom:14px;min-height:200px;background:var(--surface)}
+.dl{display:flex;gap:24px;flex-wrap:wrap;margin-bottom:14px}
 .dl .lbl{margin-bottom:2px}
-.dl b{font-size:14px;font-weight:500}
-.semmapa{border:1px dashed var(--linha-forte);border-radius:var(--r);background:#FBFAF8;padding:22px 14px;text-align:center;margin-bottom:16px}
-.semmapa .t{font-family:"Bebas Neue",sans-serif;font-size:20px;letter-spacing:.06em;color:var(--tinta-2)}
-.semmapa .s{font-size:12px;color:var(--tinta-3)}
+.dl .v{font-weight:600;font-size:14.5px}
+.sport-nat{border-left:4px solid var(--esporte-natacao)}
+.sport-bike{border-left:4px solid var(--esporte-bike)}
+.sport-cor{border-left:4px solid var(--esporte-corrida)}
 
-.dia{margin-bottom:34px}
-.dia-h{display:flex;align-items:baseline;gap:12px;margin-bottom:6px}
-.dia-h .d{font-family:"Bebas Neue",sans-serif;font-size:30px;letter-spacing:.03em}
-.dia-h .w{font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--tinta-3)}
-.dia-l{height:1px;background:var(--tinta);margin-bottom:6px}
-.ev{display:grid;grid-template-columns:82px 1fr;gap:14px;padding:14px 0;border-bottom:1px solid var(--linha)}
+/* Agenda */
+.dia{margin-bottom:30px}
+.dia-h{display:flex;align-items:baseline;gap:12px;padding-bottom:8px;border-bottom:2px solid var(--ink);margin-bottom:4px}
+.dia-h .d{font-family:var(--font-display);font-weight:800;font-size:22px}
+.dia-h .w{font-family:var(--font-display);font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-muted)}
+.ev{display:grid;grid-template-columns:92px 1fr;gap:12px;padding:13px 0;border-bottom:1px solid var(--line)}
 .ev:last-child{border-bottom:0}
-.ev .h{font-family:"Bebas Neue",sans-serif;font-size:18px;letter-spacing:.04em;color:var(--tinta-2);padding-top:2px}
-.ev .t{font-weight:700;font-size:15px;margin-bottom:2px}
-.ev .l{font-size:13px;color:var(--tinta-2)}
-.ev.eq{background:#FDFBF5;border-left:3px solid var(--dourado);padding-left:12px;margin-left:-15px;border-radius:0 var(--r) var(--r) 0}
-.ev.eq .h{color:var(--dourado)}
-.ev.hot{background:#FDF6F6;border-left:3px solid var(--vinho);padding-left:12px;margin-left:-15px;border-radius:0 var(--r) var(--r) 0}
-.ev.hot .h{color:var(--vinho)}
+.ev .h{font-family:var(--font-display);font-weight:700;font-size:14px;color:var(--ink-muted);padding-top:1px;font-variant-numeric:tabular-nums}
+.ev .t{font-weight:600;font-size:15px}
+.ev .l{font-size:13.5px;color:var(--ink-muted);margin-top:2px}
+.ev.hot{background:var(--surface-raised);border-left:4px solid var(--accent);padding-left:12px;margin-left:-16px;border-radius:0 var(--radius-md) var(--radius-md) 0;border-bottom-color:transparent;margin-bottom:4px}
+.ev.hot .h{color:var(--ink)}
+.janelas{display:grid;grid-template-columns:repeat(2,1fr);gap:6px;margin-top:8px}
+.janelas span{font-size:13px;background:var(--surface);border-radius:8px;padding:6px 10px}
+.janelas b{font-family:var(--font-display);font-weight:700}
 
-.prog{position:sticky;top:81px;z-index:20;background:var(--papel);padding:14px 0 12px;display:flex;align-items:center;gap:14px;border-bottom:1px solid var(--linha);margin-bottom:6px}
-.prog .bar{flex:1;height:3px;background:var(--linha-forte);overflow:hidden;border-radius:99px}
-.prog .fill{height:100%;width:0;background:var(--vinho);transition:width .3s}
-.prog .pct{font-family:"Bebas Neue",sans-serif;font-size:19px;min-width:42px;text-align:right}
-.gh{display:flex;justify-content:space-between;align-items:baseline;margin:32px 0 10px;padding-bottom:8px;border-bottom:1px solid var(--linha)}
-.gh .gt{font-size:11px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--vinho)}
-.gh .gc{font-size:11px;color:var(--tinta-3);letter-spacing:.08em}
-.ck{display:flex;gap:13px;align-items:flex-start;background:var(--branco);border:1px solid var(--linha);border-radius:var(--r);padding:13px 15px;margin-bottom:7px;cursor:pointer;user-select:none;transition:border-color .15s,opacity .15s}
-.ck:hover{border-color:var(--linha-forte)}
-.ck .bx{flex:0 0 20px;width:20px;height:20px;border:1.5px solid var(--linha-forte);border-radius:3px;display:grid;place-items:center;font-size:12px;color:#fff;margin-top:2px;transition:all .15s}
-.ck.done{opacity:.5}
+/* Checklist */
+.prog{position:sticky;top:93px;z-index:20;background:var(--surface);padding:14px 0 12px;display:flex;align-items:center;gap:14px;border-bottom:1px solid var(--line);margin-bottom:6px}
+.prog .bar{flex:1;height:6px;background:var(--line);overflow:hidden;border-radius:99px}
+.prog .fill{height:100%;width:0;background:var(--accent);transition:width .3s}
+.prog .pct{font-family:var(--font-display);font-weight:800;font-size:20px;min-width:48px;text-align:right;font-variant-numeric:tabular-nums}
+.gh{display:flex;justify-content:space-between;align-items:center;margin:30px 0 10px}
+.gh .gc{font-family:var(--font-display);font-size:12px;font-weight:700;color:var(--ink-muted);font-variant-numeric:tabular-nums}
+.ck{display:flex;gap:13px;align-items:flex-start;background:var(--surface-raised);border:1px solid var(--line);border-radius:var(--radius-md);padding:13px 15px;margin-bottom:7px;cursor:pointer;user-select:none;transition:opacity .15s}
+.ck .bx{flex:0 0 22px;width:22px;height:22px;border:2px solid var(--line);border-radius:6px;display:grid;place-items:center;font-size:13px;color:#fff;margin-top:1px}
+.ck.done{opacity:.55}
 .ck.done .bx{background:var(--ok);border-color:var(--ok)}
 .ck.done .tx{text-decoration:line-through}
-.ck .tx{font-size:14.5px}
-.ck .nt{display:block;font-size:12px;color:var(--tinta-3);margin-top:2px}
+.ck .tx{font-size:15px}
+.ck .nt{display:block;font-size:12.5px;color:var(--ink-muted);margin-top:2px}
 
-.passo{display:grid;grid-template-columns:34px 1fr;gap:16px;padding:18px 0;border-bottom:1px solid var(--linha)}
+/* Manual */
+.passo{display:grid;grid-template-columns:36px 1fr;gap:14px;padding:16px 0;border-bottom:1px solid var(--line)}
 .passo:last-child{border-bottom:0}
-.passo .n{font-family:"Bebas Neue",sans-serif;font-size:24px;color:var(--vinho);line-height:1.1}
-.passo h4{font-size:15.5px;margin-bottom:4px}
-.passo p{font-size:13.5px;color:var(--tinta-2)}
-.lim{display:flex;border:1px solid var(--linha);border-radius:var(--r);background:var(--branco);margin-bottom:12px}
-.lim div{flex:1;padding:16px 8px;text-align:center;border-left:1px solid var(--linha)}
-.lim div:first-child{border-left:0}
-.lim .v{font-family:"Bebas Neue",sans-serif;font-size:28px;color:var(--vinho);line-height:1}
-.lim .k{font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--tinta-3)}
-.saco{display:flex;gap:13px;align-items:flex-start;padding:14px 0;border-bottom:1px solid var(--linha)}
+.passo .n{font-family:var(--font-display);font-weight:800;font-size:13px;width:28px;height:28px;border-radius:50%;background:var(--accent);color:var(--on-accent);display:grid;place-items:center}
+.passo h4{font-family:var(--font-display);font-weight:700;font-size:15.5px;margin-bottom:4px}
+.passo p{font-size:14px;color:var(--ink-muted)}
+.kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:12px}
+.kpi{background:var(--surface-raised);border-radius:var(--radius-lg);box-shadow:var(--sombra-cartao);padding:16px 12px}
+.kpi .lbl{font-size:10px;letter-spacing:.12em}
+.kpi .v{font-family:var(--font-display);font-weight:800;font-size:28px;line-height:1.1;font-variant-numeric:tabular-nums}
+.saco{display:flex;gap:13px;align-items:flex-start;padding:14px 0;border-bottom:1px solid var(--line)}
 .saco:last-child{border-bottom:0}
-.saco .sw{flex:0 0 12px;width:12px;height:12px;border-radius:2px;margin-top:6px}
+.saco .sw{flex:0 0 14px;width:14px;height:14px;border-radius:4px;margin-top:4px;border:1px solid var(--line)}
 
-.dica{display:flex;gap:14px;padding:16px 0;border-bottom:1px solid var(--linha)}
+/* Dicas */
+.dica{display:flex;gap:14px;padding:15px 0;border-bottom:1px solid var(--line)}
 .dica:last-child{border-bottom:0}
-.dica .i{flex:0 0 24px;font-family:"Bebas Neue",sans-serif;font-size:19px;color:var(--vinho);line-height:1.3}
-.dica p{font-size:14.5px}
+.dica .i{flex:0 0 28px;font-family:var(--font-display);font-weight:800;font-size:14px;color:var(--ink-muted);padding-top:2px}
+.dica p{font-size:15px}
 
-.lk{display:inline-block;font-size:11.5px;font-weight:700;letter-spacing:.06em;text-decoration:none;color:var(--tinta);border:1px solid var(--linha-forte);border-radius:3px;padding:4px 10px;margin:0 6px 4px 0}
-.lk:hover{border-color:var(--vinho);color:var(--vinho)}
-.cup{display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap;padding:16px 0;border-bottom:1px solid var(--linha)}
+/* Parceiros */
+.cup{display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap;padding:15px 0;border-bottom:1px solid var(--line)}
 .cup:last-child{border-bottom:0}
-.cup .ad{font-size:12.5px;color:var(--tinta-2)}
-.cup .cd{font-family:"Bebas Neue",sans-serif;font-size:18px;letter-spacing:.09em;background:var(--papel);border:1px dashed var(--linha-forte);color:var(--vinho);padding:6px 13px;border-radius:3px;cursor:pointer}
-.cup .cd:active{background:#F0EBE4}
-.tel{display:flex;justify-content:space-between;align-items:center;padding:12px 0;border-bottom:1px solid var(--linha)}
+.cup .ad{font-size:13px;color:var(--ink-muted)}
+.cup .cd{font-family:var(--font-display);font-weight:800;font-size:14px;letter-spacing:.08em;background:var(--surface);border:2px dashed var(--line);color:var(--ink);padding:8px 14px;border-radius:var(--radius-md);cursor:pointer}
+.tel{display:flex;justify-content:space-between;align-items:center;padding:12px 0;border-bottom:1px solid var(--line)}
 .tel:last-child{border-bottom:0}
-.tel b{font-family:"Bebas Neue",sans-serif;font-size:24px;letter-spacing:.06em;color:var(--vinho)}
+.tel a{font-family:var(--font-display);font-weight:800;font-size:24px;text-decoration:none;font-variant-numeric:tabular-nums}
 
-.bib{display:flex;align-items:center;gap:14px;padding:12px 0;border-bottom:1px solid var(--linha)}
+/* Acompanhe */
+.busca{width:100%;font-family:var(--font-text);font-size:15px;height:48px;color:var(--ink);background:var(--surface-raised);border:1.5px solid var(--line);border-radius:var(--radius-md);padding:0 14px;margin-bottom:8px}
+.busca:focus{outline:none;border-color:var(--ink)}
+.bib{display:flex;align-items:center;gap:14px;padding:11px 0;border-bottom:1px solid var(--line)}
 .bib:last-child{border-bottom:0}
-.bib .n{flex:0 0 62px;font-family:"Bebas Neue",sans-serif;font-size:23px;letter-spacing:.04em;color:#fff;background:var(--vinho);border-radius:4px;text-align:center;padding:5px 0;line-height:1.15}
-.bib .n.pro{background:var(--tinta)}
-.bib .n.tbd{background:transparent;color:var(--tinta-3);border:1px dashed var(--linha-forte);font-size:16px;padding:8px 0}
-.bib .nm{font-size:14.5px;font-weight:500;line-height:1.3}
-.bib .ct{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--tinta-3)}
-.busca{width:100%;font-family:"DM Sans",sans-serif;font-size:15px;color:var(--tinta);background:var(--branco);border:1px solid var(--linha-forte);border-radius:var(--r);padding:11px 14px;margin-bottom:8px}
-.busca:focus{outline:none;border-color:var(--vinho)}
-.vazio{display:none;padding:16px 0;font-size:13.5px;color:var(--tinta-3)}
+.bib .n{flex:0 0 60px;font-family:var(--font-display);font-weight:800;font-size:18px;color:var(--branco);background:var(--faixa-escura);border-radius:10px;text-align:center;padding:7px 0;font-variant-numeric:tabular-nums}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .bib .n{background:#2E3035}}
+:root[data-theme="dark"] .bib .n{background:#2E3035}
+.bib .nm{font-size:14.5px;font-weight:600;line-height:1.3}
+.bib .ct{font-family:var(--font-display);font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-muted)}
+.vazio{display:none;padding:16px 0;font-size:14px;color:var(--ink-muted)}
 
-footer{border-top:1px solid var(--linha);background:var(--branco);padding:34px 0;text-align:center}
-footer .nm{font-family:"Bebas Neue",sans-serif;font-size:26px;letter-spacing:.16em}
-footer .fn{font-size:11px;color:var(--tinta-3);margin-top:10px;line-height:1.5}
+footer{background:var(--faixa-escura);color:var(--cinza-logo);padding:40px 0 calc(40px + env(safe-area-inset-bottom,0px))}
+footer .logo{width:130px;height:auto;display:block;margin-bottom:16px}
+footer p{font-size:12.5px;line-height:1.55;max-width:52ch}
+.tema{display:inline-flex;border:1px solid #2E3035;border-radius:var(--radius-pill);padding:3px;margin-top:18px}
+.tema button{border:0;background:none;cursor:pointer;font-family:var(--font-display);font-weight:700;font-size:12px;padding:6px 12px;border-radius:var(--radius-pill);color:var(--cinza-logo)}
+.tema button[aria-pressed="true"]{background:var(--branco);color:var(--preto)}
 </style>
 </head>
 <body>
 
 <header class="hero">
+  <svg class="lines" viewBox="0 0 600 400" preserveAspectRatio="xMaxYMid slice" aria-hidden="true">
+    <path d="M 60 420 L 640 120" fill="none" stroke="#ffffff" stroke-width="14"/>
+    <path d="M 110 420 L 690 120" fill="none" stroke="#ED1C24" stroke-width="14"/>
+  </svg>
   <div class="wrap">
-    <span class="eyebrow">Guia de Bolso · Equipe Villarinho</span>
-    <h1>Ironman 70.3<em>Aracaju</em></h1>
-    <p class="quando">Domingo, 29 de novembro de 2026. Natação na Foz do Rio Vaza-Barris, no Mosqueiro, e chegada na Orla da Praia de Atalaia.</p>
+    <img class="logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iODU4IiBoZWlnaHQ9IjIzOSIgdmlld0JveD0iNTIgNzIgODU4IDIzOSI+CjxwYXRoIGZpbGwtcnVsZT0ibm9uemVybyIgZmlsbD0iI0ZGRkZGRiIgZmlsbC1vcGFjaXR5PSIxIiBkPSJNIDg2OC4zMTI1IDI5NS45ODA0NjkgQyA4NjAuNTAzOTA2IDI5NS45ODA0NjkgODU0LjIxODc1IDI4OS4xOTUzMTIgODU0LjIxODc1IDI4MC4yMTA5MzggQyA4NTQuMjE4NzUgMjcxLjU5Mzc1IDg2MC41MDM5MDYgMjY1LjEwOTM3NSA4NjguMzEyNSAyNjUuMTA5Mzc1IEMgODc2LjEzMjgxMiAyNjUuMTA5Mzc1IDg4Mi40MTQwNjIgMjcxLjU5Mzc1IDg4Mi40MTQwNjIgMjgwLjIxMDkzOCBDIDg4Mi40MTQwNjIgMjg5LjE5NTMxMiA4NzYuMTMyODEyIDI5NS45ODA0NjkgODY4LjMxMjUgMjk1Ljk4MDQ2OSBNIDg2OC4zMTI1IDI1My4zMTY0MDYgQyA4NTIuNTM5MDYyIDI1My4zMTY0MDYgODQwLjk5NjA5NCAyNjUuMTA5Mzc1IDg0MC45OTYwOTQgMjgwLjIxMDkzOCBDIDg0MC45OTYwOTQgMjk1LjY4MzU5NCA4NTIuNTM5MDYyIDMwNy43NjU2MjUgODY4LjMxMjUgMzA3Ljc2NTYyNSBDIDg4NC4wOTM3NSAzMDcuNzY1NjI1IDg5NS42MzI4MTIgMjk1LjY4MzU5NCA4OTUuNjMyODEyIDI4MC4yMTA5MzggQyA4OTUuNjMyODEyIDI2NS4xMDkzNzUgODg0LjA5Mzc1IDI1My4zMTY0MDYgODY4LjMxMjUgMjUzLjMxNjQwNiBNIDc0Ny4zMTY0MDYgMzA2Ljg4MjgxMiBMIDc2MC4xMDE1NjIgMzA2Ljg4MjgxMiBMIDc2MC4xMDE1NjIgMjg2LjI1IEwgNzc5LjA4OTg0NCAyODYuMjUgTCA3NzkuMDg5ODQ0IDMwNi44ODI4MTIgTCA3OTEuODcxMDk0IDMwNi44ODI4MTIgTCA3OTEuODcxMDk0IDI1NC4yMDMxMjUgTCA3NzkuMDg5ODQ0IDI1NC4yMDMxMjUgTCA3NzkuMDg5ODQ0IDI3NS4yNzM0MzggTCA3NjAuMTAxNTYyIDI3NS4yNzM0MzggTCA3NjAuMTAxNTYyIDI1NC4yMDMxMjUgTCA3NDcuMzE2NDA2IDI1NC4yMDMxMjUgWiBNIDY0OS41MDM5MDYgMzA2LjIxODc1IEwgNjYyLjI3NzM0NCAzMDYuMjE4NzUgTCA2NjIuMjc3MzQ0IDI4MS42ODM1OTQgQyA2NjIuMjc3MzQ0IDI3OC4zNzUgNjYxLjY5NTMxMiAyNzIuNjk1MzEyIDY2MS42OTUzMTIgMjcyLjY5NTMxMiBMIDY2MS44NDM3NSAyNzIuNjk1MzEyIEMgNjYxLjg0Mzc1IDI3Mi42OTUzMTIgNjY0LjE4NzUgMjc4LjIyNjU2MiA2NjYuMjI2NTYyIDI4MS42ODM1OTQgTCA2ODAuNzYxNzE5IDMwNi4yMTg3NSBMIDY5My42MjEwOTQgMzA2LjIxODc1IEwgNjkzLjYyMTA5NCAyNTMuNTM5MDYyIEwgNjgwLjgzNTkzOCAyNTMuNTM5MDYyIEwgNjgwLjgzNTkzOCAyNzguMTQ4NDM4IEMgNjgwLjgzNTkzOCAyODEuNDY0ODQ0IDY4MS40MTc5NjkgMjg3LjEzNjcxOSA2ODEuNDE3OTY5IDI4Ny4xMzY3MTkgTCA2ODEuMjczNDM4IDI4Ny4xMzY3MTkgQyA2ODEuMjczNDM4IDI4Ny4xMzY3MTkgNjc4LjkzNzUgMjgxLjYwOTM3NSA2NzYuODkwNjI1IDI3OC4xNDg0MzggTCA2NjIuNDI5Njg4IDI1My41MzkwNjIgTCA2NDkuNTAzOTA2IDI1My41MzkwNjIgWiBNIDU4My42Njc5NjkgMzA2Ljg3ODkwNiBMIDU5Ni40NTMxMjUgMzA2Ljg3ODkwNiBMIDU5Ni40NTMxMjUgMjU0LjIwMzEyNSBMIDU4My42Njc5NjkgMjU0LjIwMzEyNSBaIE0gNTA2Ljg2MzI4MSAyNzguMDc0MjE5IEwgNTA2Ljg2MzI4MSAyNjUuMjU3ODEyIEwgNTExLjE3NTc4MSAyNjUuMjU3ODEyIEMgNTE3LjYwMTU2MiAyNjUuMjU3ODEyIDUxOS4wNjY0MDYgMjY3LjYxMzI4MSA1MTkuMDY2NDA2IDI3MS41OTM3NSBDIDUxOS4wNjY0MDYgMjc1Ljc4OTA2MiA1MTYuNTAzOTA2IDI3OC4wNzQyMTkgNTEyLjQxNDA2MiAyNzguMDc0MjE5IFogTSA0OTQuMDg1OTM4IDMwNi44ODI4MTIgTCA1MDYuODYzMjgxIDMwNi44ODI4MTIgTCA1MDYuODYzMjgxIDI4OS4xMjUgTCA1MTIuODUxNTYyIDI4OS4xMjUgTCA1MjIuMTI4OTA2IDMwNi44ODI4MTIgTCA1MzYuMzcxMDk0IDMwNi44ODI4MTIgTCA1MjYuMjIyNjU2IDI4OC40NjA5MzggQyA1MjQuOTg0Mzc1IDI4Ni4yNSA1MjQuMjUgMjg1LjI5Mjk2OSA1MjQuMjUgMjg1LjI5Mjk2OSBMIDUyNC4yNSAyODUuMTUyMzQ0IEMgNTI5LjQ0MTQwNiAyODIuNDk2MDk0IDUzMi4wNjY0MDYgMjc2LjM3NSA1MzIuMDY2NDA2IDI3MC43ODUxNTYgQyA1MzIuMDY2NDA2IDI2My4xMjEwOTQgNTI4LjM0Mzc1IDI1Ny43NDIxODggNTIyLjQyNTc4MSAyNTUuNDYwOTM4IEMgNTIwLjE2NDA2MiAyNTQuNTc0MjE5IDUxNy42MDE1NjIgMjU0LjIwMzEyNSA1MTIuMjY5NTMxIDI1NC4yMDMxMjUgTCA0OTQuMDg1OTM4IDI1NC4yMDMxMjUgWiBNIDQyNC4wNzQyMTkgMjY2LjIxNDg0NCBDIDQyNC4wNzQyMTkgMjY2LjIxNDg0NCA0MjUuMjM0Mzc1IDI3MS45NjA5MzggNDI2LjE4NzUgMjc1LjI3MzQzOCBMIDQyOS4xMTcxODggMjg1LjUxMTcxOSBMIDQxOC44MTI1IDI4NS41MTE3MTkgTCA0MjEuODA0Njg4IDI3NS4yNzM0MzggQyA0MjIuNzUzOTA2IDI3MS45NjA5MzggNDIzLjkyMTg3NSAyNjYuMjE0ODQ0IDQyMy45MjE4NzUgMjY2LjIxNDg0NCBaIE0gNDM1LjMyMDMxMiAzMDYuODc4OTA2IEwgNDQ4LjQ2NDg0NCAzMDYuODc4OTA2IEwgNDMwLjcxODc1IDI1NC4yMDMxMjUgTCA0MTcuMjc3MzQ0IDI1NC4yMDMxMjUgTCAzOTkuNTI3MzQ0IDMwNi44Nzg5MDYgTCA0MTIuNjc1NzgxIDMwNi44Nzg5MDYgTCA0MTUuODIwMzEyIDI5NS44MzIwMzEgTCA0MzIuMTA1NDY5IDI5NS44MzIwMzEgWiBNIDMyMS42MTMyODEgMzA4LjIxMDkzOCBMIDM1NS43MzA0NjkgMzA4LjIxMDkzOCBMIDM1NS43MzA0NjkgMjk3LjE2MDE1NiBMIDMzNC4zOTg0MzggMjk3LjE2MDE1NiBMIDMzNC4zOTg0MzggMjU1LjUzMTI1IEwgMzIxLjYxMzI4MSAyNTUuNTMxMjUgWiBNIDI0MC4wNTQ2ODggMzA2Ljg4MjgxMiBMIDI3NC4xNzE4NzUgMzA2Ljg4MjgxMiBMIDI3NC4xNzE4NzUgMjk1LjgzMjAzMSBMIDI1Mi44MzU5MzggMjk1LjgzMjAzMSBMIDI1Mi44MzU5MzggMjU0LjIwMzEyNSBMIDI0MC4wNTQ2ODggMjU0LjIwMzEyNSBaIE0gMTc0LjU2NjQwNiAzMDYuODc4OTA2IEwgMTg3LjM0NzY1NiAzMDYuODc4OTA2IEwgMTg3LjM0NzY1NiAyNTQuMjAzMTI1IEwgMTc0LjU2NjQwNiAyNTQuMjAzMTI1IFogTSA3OC4yNTM5MDYgMjU0LjIwMzEyNSBMIDkyLjEyNSAyNTQuMjAzMTI1IEwgMTAxLjMzNTkzOCAyODQuMTkxNDA2IEMgMTAyLjM1NTQ2OSAyODcuNTA3ODEyIDEwMy4zMDg1OTQgMjkyLjY2MDE1NiAxMDMuMzA4NTk0IDI5Mi42NjAxNTYgTCAxMDMuNDUzMTI1IDI5Mi42NjAxNTYgQyAxMDMuNDUzMTI1IDI5Mi42NjAxNTYgMTA0LjQwNjI1IDI4Ny41MDc4MTIgMTA1LjQyNTc4MSAyODQuMTkxNDA2IEwgMTE0Ljc3NzM0NCAyNTQuMjAzMTI1IEwgMTI4LjQyOTY4OCAyNTQuMjAzMTI1IEwgMTEwLjAzMTI1IDMwNi44ODI4MTIgTCA5Ni43MzQzNzUgMzA2Ljg4MjgxMiBaIE0gNzguMjUzOTA2IDI1NC4yMDMxMjUgIi8+CjxwYXRoIGZpbGwtcnVsZT0ibm9uemVybyIgZmlsbD0iI0VEMUMyNCIgZmlsbC1vcGFjaXR5PSIxIiBkPSJNIDg2NC4zMzIwMzEgMTMwLjExMzI4MSBMIDc1Mi42NzE4NzUgMTgyLjEyODkwNiBDIDcxOC40Mjk2ODggMTk4LjA4MjAzMSA2NzguOTE0MDYyIDE5OC42MDE1NjIgNjQ0LjI4NTE1NiAxODMuNTc4MTI1IEwgNTQwLjIxODc1IDEzOC4wNTA3ODEgTCA0MjIuOTE0MDYyIDg2LjI4OTA2MiBDIDM4My41NDY4NzUgNjkuMjA3MDMxIDMzOC42NjQwNjIgNjkuODAwNzgxIDI5OS43NjU2MjUgODcuOTE3OTY5IEwgMTQ3Ljg5ODQzOCAxNTguNjY0MDYyIEwgMTkwLjQ0OTIxOSAxNTguNjY0MDYyIEwgMzA3LjM1MTU2MiAxMDQuMjA3MDMxIEMgMzQxLjU5Mzc1IDg4LjI1MzkwNiAzODEuMTA5Mzc1IDg3LjczNDM3NSA0MTUuNzEwOTM4IDEwMi43NDYwOTQgTCA1MzIuOTkyMTg4IDE1NC41IEwgNjM3LjEwOTM3NSAyMDAuMDUwNzgxIEMgNjU2LjE3MTg3NSAyMDguMzIwMzEyIDY3Ni41MjM0MzggMjEyLjQ0OTIxOSA2OTYuODY3MTg4IDIxMi40NDkyMTkgQyA3MTguNTM1MTU2IDIxMi40NDkyMTkgNzQwLjE5NTMxMiAyMDcuNzYxNzE5IDc2MC4yNTc4MTIgMTk4LjQxNzk2OSBMIDkwNi44ODY3MTkgMTMwLjExMzI4MSBaIE0gODY0LjMzMjAzMSAxMzAuMTEzMjgxICIvPgo8cGF0aCBmaWxsLXJ1bGU9Im5vbnplcm8iIGZpbGw9IiNGRkZGRkYiIGZpbGwtb3BhY2l0eT0iMSIgZD0iTSA3NzEuNDg4MjgxIDEzMC4xMTMyODEgTCA2NTkuODI4MTI1IDE4Mi4xMjg5MDYgQyA2MjUuNTg1OTM4IDE5OC4wODIwMzEgNTg2LjA3MDMxMiAxOTguNjAxNTYyIDU1MS40NDE0MDYgMTgzLjU3ODEyNSBMIDQ0Ny4zNzUgMTM4LjA1MDc4MSBMIDMzMC4wNzAzMTIgODYuMjg5MDYyIEMgMjkwLjcwMzEyNSA2OS4yMDcwMzEgMjQ1LjgyMDMxMiA2OS44MDA3ODEgMjA2LjkyMTg3NSA4Ny45MTc5NjkgTCA1NS4wNTQ2ODggMTU4LjY2NDA2MiBMIDk3LjYwNTQ2OSAxNTguNjY0MDYyIEwgMjE0LjUwNzgxMiAxMDQuMjA3MDMxIEMgMjQ4Ljc1IDg4LjI1MzkwNiAyODguMjYxNzE5IDg3LjczNDM3NSAzMjIuODY3MTg4IDEwMi43NDYwOTQgTCA0NDAuMTQ4NDM4IDE1NC41IEwgNTQ0LjI2NTYyNSAyMDAuMDUwNzgxIEMgNTYzLjMyODEyNSAyMDguMzIwMzEyIDU4My42Nzk2ODggMjEyLjQ0OTIxOSA2MDQuMDIzNDM4IDIxMi40NDkyMTkgQyA2MjUuNjkxNDA2IDIxMi40NDkyMTkgNjQ3LjM1MTU2MiAyMDcuNzYxNzE5IDY2Ny40MTQwNjIgMTk4LjQxNzk2OSBMIDgxNC4wNDI5NjkgMTMwLjExMzI4MSBaIE0gNzcxLjQ4ODI4MSAxMzAuMTEzMjgxICIvPgo8L3N2Zz4K" alt="Equipe Villarinho">
+    <span class="rotulo">Guia de Bolso · 70.3 Aracaju</span>
+    <h1>Ironman 70.3 Aracaju</h1>
+    <p class="quando">Dom 29/11/2026. Natação na Foz do Rio Vaza-Barris, no Mosqueiro, e chegada na Orla da Praia de Atalaia.</p>
     <div class="dist">
-      <div><div class="v">1,9 km</div><div class="k">Natação</div></div>
-      <div><div class="v">90 km</div><div class="k">Ciclismo</div></div>
-      <div><div class="v">21,1 km</div><div class="k">Corrida</div></div>
+      <div><div class="k"><i style="background:#A9ACB1"></i>Natação</div><div class="v">1,9 km</div></div>
+      <div><div class="k"><i style="background:#FFFFFF"></i>Ciclismo</div><div class="v">90 km</div></div>
+      <div><div class="k"><i style="background:#ED1C24"></i>Corrida</div><div class="v">21,1 km</div></div>
     </div>
     <div class="count" id="count">
       <div><div class="n" id="cd">0</div><div class="l">dias</div></div>
@@ -192,373 +242,359 @@ footer .fn{font-size:11px;color:var(--tinta-3);margin-top:10px;line-height:1.5}
     <button class="tab" data-t="manual">Manual</button>
     <button class="tab" data-t="dicas">Dicas</button>
     <button class="tab" data-t="parceiros">Parceiros</button>
-    <button class="tab" data-t="acompanhe">Acompanhe</button>
+    <button class="tab" data-t="acompanhe">Equipe</button>
   </div>
 </nav>
 
 <main class="wrap">
 
-<!-- ================= INÍCIO ================= -->
+<!-- INÍCIO -->
 <section id="inicio" class="on">
-  <h2>Visão geral</h2>
-  <p class="h2sub">Endereços, o grupo da equipe e o que você precisa resolver antes de chegar em Aracaju.</p>
+  <span class="rotulo">Visão geral</span>
+  <h2>O fim de semana em Aracaju</h2>
+  <p class="h2sub">Endereços, horários que não podem passar e o que você precisa resolver antes de chegar.</p>
 
-  <h3>Equipe Villarinho em Aracaju</h3>
-  <div class="card team">
-    <div class="lbl">Grupo da prova</div>
-    <b>Entre no grupo de WhatsApp da equipe</b>
-    <p class="muted small" style="margin:4px 0 12px">É por ali que vamos avisar treino de reconhecimento, ponto de encontro, tenda e jantar da equipe. Tudo isso entra aqui no guia assim que for definido.</p>
-    <a class="btn" href="https://chat.whatsapp.com/BxxInN30ISqBThZrU9bmBo?mode=gi_t" target="_blank" rel="noopener">Entrar no grupo</a>
+  <div class="card escuro">
+    <div class="lbl" style="color:var(--cinza-logo)">Largada · Dom 29/11</div>
+    <div class="tt" style="font-size:22px;font-weight:800">Amadores das 5h15 às 5h35</div>
+    <p class="muted small" style="margin:6px 0 4px">Rolling start na Foz do Vaza-Barris. Elite masculina às 5h. O ônibus da T2 para a largada sai das 3h às 4h10 e a T1 fica aberta das 3h30 às 5h.</p>
   </div>
 
   <h3>Onde é cada coisa</h3>
   <div class="grid">
-    <div class="card acc">
+    <div class="card">
       <div class="lbl">Natação · Transição 1</div>
       <b>Foz do Vaza-Barris, Mosqueiro</b>
       <p class="muted small">Ponte Joel Silveira, SE-100, perto da Rua José Francisco Matias, 2412</p>
-      <a class="lk" style="margin-top:8px" href="https://www.google.com/maps/search/?api=1&query=Ponte+Joel+Silveira+Mosqueiro+Aracaju" target="_blank" rel="noopener">Ver no mapa</a>
+      <a class="lk" href="https://www.google.com/maps/search/?api=1&query=Ponte+Joel+Silveira+Mosqueiro+Aracaju" target="_blank" rel="noopener">Ver no mapa</a>
     </div>
-    <div class="card acc">
+    <div class="card">
       <div class="lbl">Village · Transição 2 · Chegada</div>
       <b>Praia de Atalaia</b>
-      <p class="muted small">Av. Santos Dumont, 1800, Atalaia, Aracaju</p>
-      <a class="lk" style="margin-top:8px" href="https://www.google.com/maps/search/?api=1&query=Av.+Santos+Dumont+1800+Atalaia+Aracaju" target="_blank" rel="noopener">Ver no mapa</a>
-    </div>
-    <div class="card acc">
-      <div class="lbl">Atenção</div>
-      <b>T1 e T2 são em lugares diferentes</b>
-      <p class="muted small">A bike fica no Mosqueiro, longe da arena. No domingo tem ônibus da T2 até a largada das 3h30 às 4h30.</p>
-    </div>
-    <div class="card acc">
-      <div class="lbl">Largada</div>
-      <b>Domingo cedo, rolling start</b>
-      <p class="muted small">Horário oficial 2026 ainda não saiu. A T1 abre às 4h e fecha às 5h15. Em 2025 a largada PRO foi às 5h e os amadores entre 5h15 e 5h35.</p>
+      <p class="muted small">Av. Santos Dumont, s/n, Coroa do Meio, perto do Centro de Arte e Cultura</p>
+      <a class="lk" href="https://www.google.com/maps/search/?api=1&query=Centro+de+Arte+e+Cultura+Orla+de+Atalaia+Aracaju" target="_blank" rel="noopener">Ver no mapa</a>
     </div>
   </div>
+  <p class="tiny" style="margin-top:10px">A bike fica no Mosqueiro, longe da arena. Planeje o transporte do sábado à tarde e compre o ônibus da madrugada de domingo na retirada do kit.</p>
 
-  <div class="aviso">
-    <span class="tag al">Obrigatório</span>
-    <p class="small" style="margin:10px 0 10px">Sem estes passos você não retira o kit: <b>agendar o horário do check-in</b>, <b>assinar o termo de saúde online</b> e pagar a <b>taxa de day use da federação local</b>. Assistir ao briefing online no YouTube da Unlimited Sports também é obrigatório.</p>
-    <p class="tiny" style="margin-bottom:14px">A organização ainda marca os três links como "em breve". Assim que abrirem, os botões abaixo passam a funcionar e avisamos no grupo.</p>
-    <span class="btn off">Agendar check-in · em breve</span>
-    <span class="btn off">Termo de saúde · em breve</span>
-    <span class="btn off">Taxa da federação · em breve</span>
+  <div class="card" style="margin-top:22px">
+    <span class="tag obr">Obrigatório</span>
+    <p class="small" style="margin:12px 0 10px">Para retirar o kit você precisa <b style="font-size:inherit">pagar a taxa da federação local</b> e <b style="font-size:inherit">cadastrar a biometria facial</b>. Também vale agendar o horário da entrega de kits.</p>
+    <p class="tiny" style="margin-bottom:12px">A organização ainda marca os links como "em breve". Avisamos no grupo assim que abrirem.</p>
+    <a class="btn btn-principal" href="https://unlimitedsports.com.br/ironman-70-3-sergipe/programacao-ironman-70-3-sergipe/" target="_blank" rel="noopener">Abrir a página oficial</a>
   </div>
 
-  <h3>O fim de semana em quatro linhas</h3>
+  <h3>Grupo da equipe</h3>
   <div class="card">
-    <p class="small"><b>Quinta 26/11</b>: Village abre às 14h e começa a entrega de kits, em horário agendado.</p>
-    <p class="small" style="margin-top:9px"><b>Sexta 27/11</b>: Village e check-in das 9h às 18h. Melhor dia para resolver o kit.</p>
-    <p class="small" style="margin-top:9px"><b>Sábado 28/11</b>: check-in só até 12h. À tarde, bike na T1 no Mosqueiro (13h às 19h, por número) e T2 aberta na Atalaia (13h às 20h).</p>
-    <p class="small" style="margin-top:9px"><b>Domingo 29/11</b>: ônibus para a largada 3h30 às 4h30, T1 das 4h às 5h15, prova, check-out 12h30 às 15h30, premiação 18h30 e vagas do Mundial 19h30.</p>
+    <p class="small muted" style="margin-bottom:10px">Treino de reconhecimento, ponto de encontro e jantar da equipe são combinados no grupo de WhatsApp da prova.</p>
+    <a class="btn btn-sec" href="https://chat.whatsapp.com/BxxInN30ISqBThZrU9bmBo?mode=gi_t" target="_blank" rel="noopener">Entrar no grupo</a>
   </div>
 
-  <h3>Links oficiais</h3>
+  <h3>Em quatro linhas</h3>
   <div class="card">
-    <a class="btn o" href="https://unlimitedsports.com.br/en/ironman-70-3-aracaju-en/" target="_blank" rel="noopener">Site da prova</a>
-    <a class="btn o" href="https://unlimitedsports.com.br/en/ironman-70-3-aracaju-en/schedule-ironman-70-3-aracaju/" target="_blank" rel="noopener">Programação</a>
-    <a class="btn o" href="https://unlimitedsports.com.br/ironman-70-3-aracaju-en/regulation-ironman-70-3-aracaju/" target="_blank" rel="noopener">Regulamento</a>
-    <a class="btn o" href="https://www.ticketsports.com.br/en/2026-ironman-70-3-aracaju-sergipe-74812" target="_blank" rel="noopener">Inscrição</a>
+    <p class="small"><b style="font-size:inherit">Qui 26/11</b>: Village abre às 14h e começa a entrega de kits, com horário agendado.</p>
+    <p class="small" style="margin-top:9px"><b style="font-size:inherit">Sex 27/11</b>: kits das 9h às 18h. Melhor dia para resolver tudo.</p>
+    <p class="small" style="margin-top:9px"><b style="font-size:inherit">Sáb 28/11</b>: kits só até 12h. Sacola vermelha na T2 das 10h às 18h e bike na T1 das 14h às 18h, na janela do seu número.</p>
+    <p class="small" style="margin-top:9px"><b style="font-size:inherit">Dom 29/11</b>: ônibus 3h a 4h10, T1 3h30 a 5h, largada 5h15 a 5h35, check-out 12h a 15h e premiação 17h30.</p>
   </div>
 </section>
 
-<!-- ================= PERCURSOS ================= -->
+<!-- PERCURSOS -->
 <section id="percursos">
-  <h2>Percursos</h2>
-  <p class="h2sub">Os mapas oficiais 2026 ainda não foram publicados. Abaixo está o que já sabemos e como foi nas edições anteriores.</p>
+  <span class="rotulo">Percursos</span>
+  <h2>Natação, bike e corrida</h2>
+  <p class="h2sub">Traçados oficiais publicados pela Unlimited Sports no Strava. Toque no mapa para mexer e ampliar.</p>
 
-  <div class="card">
-    <div class="semmapa"><div class="t">Mapa oficial em breve</div><div class="s">Entra aqui assim que sair o guia do atleta 2026</div></div>
+  <div class="card sport-nat">
     <div class="pc-head"><span class="nm">Natação</span><span class="km">1,9 km</span></div>
+    <div class="mapa"><div class="strava-embed-placeholder" data-embed-type="route" data-embed-id="3326621076696270262" data-style="standard" data-from-embed="false"></div></div>
     <div class="dl">
-      <div><div class="lbl">Onde</div><b>Foz do Rio Vaza-Barris</b></div>
-      <div><div class="lbl">Largada</div><b>Rolling start</b></div>
-      <div><div class="lbl">Tempo limite</div><b>1h10</b></div>
+      <div><div class="lbl">Onde</div><div class="v">Rio Vaza-Barris</div></div>
+      <div><div class="lbl">Largada</div><div class="v">Rolling start</div></div>
+      <div><div class="lbl">Tempo limite</div><div class="v">1h10</div></div>
     </div>
-    <p class="muted small" style="margin-bottom:8px">Natação em rio, no antigo atracadouro de balsas ao lado da Ponte Joel Silveira, no Mosqueiro. A saída da água leva direto à Transição 1, no mesmo local.</p>
-    <p class="small" style="margin-bottom:14px"><b>Roupa de borracha:</b> só é liberada para amadores com a água em 24,6 °C ou menos. A medição oficial é 1h30 antes da largada. Em novembro a água costuma estar quente, então treine e prepare a prova sem ela.</p>
-    <a class="btn o" href="https://www.google.com/maps/search/?api=1&query=Ponte+Joel+Silveira+Mosqueiro+Aracaju" target="_blank" rel="noopener">Local da natação</a>
+    <p class="muted small" style="margin-bottom:8px">Volta única no rio, no sentido horário, passando por baixo da Ponte Joel Silveira. A saída da água leva direto à Transição 1.</p>
+    <p class="small"><b style="font-size:inherit">Roupa de borracha:</b> só é liberada para amadores com a água em 24,6 °C ou menos, medida 1h30 antes da largada. Em novembro a água costuma estar quente, então prepare a prova sem ela.</p>
+    <a class="lk" href="https://www.strava.com/routes/3326621076696270262" target="_blank" rel="noopener">Abrir no Strava</a>
   </div>
 
-  <div class="card">
-    <div class="semmapa"><div class="t">Mapa oficial em breve</div><div class="s">Entra aqui assim que sair o guia do atleta 2026</div></div>
-    <div class="pc-head"><span class="nm">Ciclismo</span><span class="km">90 km</span></div>
+  <div class="card sport-bike">
+    <div class="pc-head"><span class="nm">Ciclismo</span><span class="km">89,9 km</span></div>
+    <div class="mapa"><div class="strava-embed-placeholder" data-embed-type="route" data-embed-id="3335675193729726308" data-style="standard" data-from-embed="false"></div></div>
     <div class="dl">
-      <div><div class="lbl">Saída</div><b>T1 · Mosqueiro</b></div>
-      <div><div class="lbl">Chegada</div><b>T2 · Atalaia</b></div>
-      <div><div class="lbl">Tempo limite</div><b>5h00 acumuladas</b></div>
+      <div><div class="lbl">Saída</div><div class="v">T1 · Mosqueiro</div></div>
+      <div><div class="lbl">Altimetria</div><div class="v">360 m</div></div>
+      <div><div class="lbl">Tempo limite</div><div class="v">5h acumuladas</div></div>
     </div>
-    <p class="muted small" style="margin-bottom:8px">Percurso predominantemente plano. Nas edições anteriores o pedal usou a rodovia SE-100 e as avenidas Inácio Barbosa, Santos Dumont, Beira Mar e Tancredo Neves, em voltas, terminando na Orla de Atalaia. Vento lateral da orla é o que mais pesa.</p>
-    <p class="small" style="margin-bottom:14px"><b>Vácuo:</b> 12 m de distância (6 bikes) para amadores e 25 s para completar a ultrapassagem. Cartão azul vale 2 min de penalidade, cartão amarelo 30 s.</p>
+    <p class="muted small" style="margin-bottom:8px">Percurso plano pela SE-100 e pela orla, com chegada na T2 na Praia de Atalaia. O vento da orla é o que mais pesa.</p>
+    <p class="small"><b style="font-size:inherit">Vácuo:</b> 12 m entre bikes e 25 s para completar a ultrapassagem. Cartão azul vale 2 min de penalidade e cartão amarelo 30 s.</p>
+    <a class="lk" href="https://www.strava.com/routes/3335675193729726308" target="_blank" rel="noopener">Abrir no Strava</a>
   </div>
 
-  <div class="card">
-    <div class="semmapa"><div class="t">Mapa oficial em breve</div><div class="s">Entra aqui assim que sair o guia do atleta 2026</div></div>
+  <div class="card sport-cor">
     <div class="pc-head"><span class="nm">Corrida</span><span class="km">21,1 km</span></div>
+    <div class="mapa"><div class="strava-embed-placeholder" data-embed-type="route" data-embed-id="3326621600738980424" data-style="standard" data-from-embed="false"></div></div>
     <div class="dl">
-      <div><div class="lbl">Onde</div><b>Orla de Atalaia</b></div>
-      <div><div class="lbl">Chegada</div><b>Praça de Eventos</b></div>
-      <div><div class="lbl">Tempo limite</div><b>8h30 de prova</b></div>
+      <div><div class="lbl">Onde</div><div class="v">Orla de Atalaia</div></div>
+      <div><div class="lbl">Altimetria</div><div class="v">60 m</div></div>
+      <div><div class="lbl">Tempo limite</div><div class="v">8h30 de prova</div></div>
     </div>
-    <p class="muted small" style="margin-bottom:14px">Corrida plana ao longo da Orla da Praia de Atalaia, com a torcida perto o tempo todo. É a parte mais quente do dia, com pouca sombra. Postos de hidratação conforme o guia do atleta 2026.</p>
+    <p class="muted small">Corrida plana na Orla de Atalaia, com a torcida perto o tempo todo. É a parte mais quente do dia e tem pouca sombra.</p>
+    <a class="lk" href="https://www.strava.com/routes/3326621600738980424" target="_blank" rel="noopener">Abrir no Strava</a>
   </div>
 
-  <a class="btn o" href="https://unlimitedsports.com.br/en/ironman-70-3-aracaju-en/" target="_blank" rel="noopener">Página oficial da prova</a>
+  <a class="btn btn-sec" href="https://unlimitedsports.com.br/ironman-70-3-sergipe/percursos-ironman-70-3-sergipe/" target="_blank" rel="noopener">Página oficial de percursos</a>
 </section>
 
-<!-- ================= AGENDA ================= -->
+<!-- AGENDA -->
 <section id="agenda">
-  <h2>Agenda</h2>
-  <p class="h2sub">Programação oficial 2026 da Unlimited Sports em ordem cronológica. Os pontos mais importantes estão destacados.</p>
+  <span class="rotulo">Agenda</span>
+  <h2>Programação oficial 2026</h2>
+  <p class="h2sub">Em ordem cronológica. Os horários que não podem passar estão destacados.</p>
 
   <div class="dia">
-    <div class="dia-h"><span class="d">26 NOV</span><span class="w">Quinta-feira</span></div><div class="dia-l"></div>
+    <div class="dia-h"><span class="d">Qui 26/11</span></div>
     <div class="ev"><span class="h">14h–19h</span><div><div class="t">IRONMAN Village aberto</div><div class="l">Praia de Atalaia</div></div></div>
-    <div class="ev"><span class="h">14h–18h</span><div><div class="t">Check-in de atletas, em horário agendado</div><div class="l">IRONMAN Village</div></div></div>
+    <div class="ev"><span class="h">14h–18h</span><div><div class="t">Entrega de kits, com horário agendado</div><div class="l">IRONMAN Village</div></div></div>
   </div>
 
   <div class="dia">
-    <div class="dia-h"><span class="d">27 NOV</span><span class="w">Sexta-feira</span></div><div class="dia-l"></div>
+    <div class="dia-h"><span class="d">Sex 27/11</span></div>
     <div class="ev"><span class="h">9h–19h</span><div><div class="t">IRONMAN Village aberto</div><div class="l">Praia de Atalaia</div></div></div>
-    <div class="ev"><span class="h">9h–18h</span><div><div class="t">Check-in de atletas, em horário agendado</div><div class="l">IRONMAN Village</div></div></div>
-    <div class="ev"><span class="h">16h–17h</span><div><div class="t">Tira-dúvidas com a direção de prova (opcional)</div><div class="l">Balcão de atendimento ao atleta, no Village</div></div></div>
+    <div class="ev"><span class="h">9h–18h</span><div><div class="t">Entrega de kits, com horário agendado</div><div class="l">IRONMAN Village</div></div></div>
+    <div class="ev"><span class="h">10h–11h</span><div><div class="t">1º plantão de dúvidas do congresso técnico</div><div class="l">SAC, no Village. Para amadores.</div></div></div>
+    <div class="ev"><span class="h">17h–18h</span><div><div class="t">2º plantão de dúvidas do congresso técnico</div><div class="l">SAC, no Village. Para amadores.</div></div></div>
   </div>
 
   <div class="dia">
-    <div class="dia-h"><span class="d">28 NOV</span><span class="w">Sábado</span></div><div class="dia-l"></div>
+    <div class="dia-h"><span class="d">Sáb 28/11</span></div>
     <div class="ev"><span class="h">8h</span><div><div class="t">IRONKIDS</div><div class="l">Praia de Atalaia</div></div></div>
-    <div class="ev"><span class="h">9h–19h</span><div><div class="t">IRONMAN Village aberto</div><div class="l">Praia de Atalaia</div></div></div>
-    <div class="ev hot"><span class="h">9h–12h</span><div><div class="t">Check-in de atletas, último horário</div><div class="l">IRONMAN Village. Depois das 12h não há mais retirada de kit.</div></div></div>
-    <div class="ev"><span class="h">10h30–11h30</span><div><div class="t">Tira-dúvidas com a direção de prova (opcional)</div><div class="l">Balcão de atendimento ao atleta, no Village</div></div></div>
-    <div class="ev hot"><span class="h">13h–19h</span><div><div class="t">Check-in da bike na Transição 1, por número de peito</div><div class="l">Foz do Vaza-Barris, Mosqueiro. A janela de cada faixa de número sai no guia do atleta.</div></div></div>
-    <div class="ev hot"><span class="h">13h–20h</span><div><div class="t">Transição 2 aberta</div><div class="l">Praia de Atalaia. Entrega da sacola da corrida.</div></div></div>
+    <div class="ev"><span class="h">8h30–19h</span><div><div class="t">IRONMAN Village aberto</div><div class="l">Praia de Atalaia</div></div></div>
+    <div class="ev hot"><span class="h">8h30–12h</span><div><div class="t">Entrega de kits, último horário</div><div class="l">IRONMAN Village. Depois das 12h não há mais retirada.</div></div></div>
+    <div class="ev hot"><span class="h">10h–18h</span><div><div class="t">Sacola vermelha na Transição 2</div><div class="l">Praia de Atalaia. Itens da corrida. Só no sábado: no domingo ela não é aceita.</div></div></div>
+    <div class="ev"><span class="h">10h30</span><div><div class="t">Coletiva de imprensa</div><div class="l">Praia de Atalaia</div></div></div>
+    <div class="ev hot"><span class="h">14h–18h</span><div><div class="t">Check-in da bike na Transição 1, por número de peito</div><div class="l">Foz do Vaza-Barris. Leve a bike identificada. Sacola azul, capacete e sapatilha ficam para domingo.</div>
+      <div class="janelas">
+        <span><b>14h</b> · 1001 a 1500</span><span><b>15h</b> · 651 a 1000</span>
+        <span><b>16h</b> · 301 a 650</span><span><b>17h</b> · 101 a 300</span>
+      </div></div></div>
   </div>
 
   <div class="dia">
-    <div class="dia-h"><span class="d">29 NOV</span><span class="w">Domingo · Dia de prova</span></div><div class="dia-l"></div>
-    <div class="ev hot"><span class="h">3h30–4h30</span><div><div class="t">Ônibus da T2 para a largada</div><div class="l">Saída da Praia de Atalaia para o Mosqueiro. Não deixe para o último ônibus.</div></div></div>
-    <div class="ev hot"><span class="h">4h–5h15</span><div><div class="t">Transição 1 aberta</div><div class="l">Foz do Vaza-Barris. Fecha às 5h15.</div></div></div>
-    <div class="ev eq"><span class="h">A confirmar</span><div><div class="t">Largadas PRO e amadores, rolling start <span class="tag tbd">2026</span></div><div class="l">Em 2025: PRO 5h e 5h05, amadores 5h15 a 5h35.</div></div></div>
-    <div class="ev"><span class="h">8h–19h</span><div><div class="t">IRONMAN Village aberto</div><div class="l">Praia de Atalaia</div></div></div>
-    <div class="ev"><span class="h">10h30</span><div><div class="t">Premiação top 3</div><div class="l">Praia de Atalaia</div></div></div>
-    <div class="ev"><span class="h">12h30–15h30</span><div><div class="t">Retirada da bike e das sacolas · Achados e perdidos</div><div class="l">Transição 2, Praia de Atalaia</div></div></div>
-    <div class="ev"><span class="h">18h30</span><div><div class="t">Premiação por categoria</div><div class="l">Praia de Atalaia</div></div></div>
-    <div class="ev"><span class="h">19h30</span><div><div class="t">Distribuição das vagas do Mundial 70.3 e roll down</div><div class="l">Praia de Atalaia. Quem quiser vaga precisa estar presente.</div></div></div>
+    <div class="dia-h"><span class="d">Dom 29/11</span><span class="w">Dia de prova</span></div>
+    <div class="ev hot"><span class="h">3h–4h10</span><div><div class="t">Ônibus da T2 para a largada</div><div class="l">Saída do IRONMAN Village. Só para atletas, comprado na retirada do kit.</div></div></div>
+    <div class="ev hot"><span class="h">3h30–5h</span><div><div class="t">Transição 1 aberta</div><div class="l">Leve a sacola branca (roupa seca), a sacola azul (bike), capacete e sapatilha. Sacola azul ao lado da bike, sacola branca na tenda indicada.</div></div></div>
+    <div class="ev"><span class="h">5h</span><div><div class="t">Largada elite masculina</div><div class="l">Foz do Vaza-Barris</div></div></div>
+    <div class="ev hot"><span class="h">5h15–5h35</span><div><div class="t">Largada dos amadores, rolling start</div><div class="l">Foz do Vaza-Barris</div></div></div>
+    <div class="ev"><span class="h">8h–16h</span><div><div class="t">IRONMAN Village aberto</div><div class="l">Praia de Atalaia</div></div></div>
+    <div class="ev"><span class="h">10h</span><div><div class="t">Premiação top 3 geral masculino</div><div class="l">Praia de Atalaia</div></div></div>
+    <div class="ev"><span class="h">12h–15h</span><div><div class="t">Retirada da bike e das sacolas · Achados e perdidos</div><div class="l">Transição 2, Praia de Atalaia</div></div></div>
+    <div class="ev"><span class="h">16h–17h</span><div><div class="t">Resultado oficial e contestações</div><div class="l">Praia de Atalaia</div></div></div>
+    <div class="ev"><span class="h">17h30</span><div><div class="t">Premiação e vagas para o Mundial 70.3 2027</div><div class="l">Praia de Atalaia. Para pegar vaga é obrigatório estar presente. A rolagem começa logo depois da premiação.</div></div></div>
   </div>
-
-  <p class="tiny">Programação oficial sujeita a alteração sem aviso prévio. Confira a página da Unlimited Sports na semana da prova.</p>
+  <p class="tiny">Programação sujeita a alteração. Confira a página da Unlimited Sports na semana da prova.</p>
 </section>
 
-<!-- ================= CHECKLIST ================= -->
+<!-- CHECKLIST -->
 <section id="checklist">
-  <h2>Checklist</h2>
+  <span class="rotulo">Checklist</span>
+  <h2>O que levar</h2>
   <p class="h2sub">Toque para marcar. O progresso fica salvo no seu celular.</p>
-
   <div class="prog"><div class="bar"><div class="fill" id="ckfill"></div></div><div class="pct" id="ckpct">0%</div></div>
 
   <div class="ck-group">
-    <div class="gh"><span class="gt">Documentos e burocracia</span><span class="gc"></span></div>
+    <div class="gh"><span class="tag obr">Documentos</span><span class="gc"></span></div>
     <div class="ck" data-k="d1"><span class="bx"></span><span class="tx">Documento oficial com foto</span></div>
-    <div class="ck" data-k="d2"><span class="bx"></span><span class="tx">Check-in agendado no formulário oficial</span></div>
-    <div class="ck" data-k="d3"><span class="bx"></span><span class="tx">Termo de saúde assinado online</span></div>
-    <div class="ck" data-k="d4"><span class="bx"></span><span class="tx">Taxa de day use da federação paga</span></div>
-    <div class="ck" data-k="d5"><span class="bx"></span><span class="tx">Briefing online assistido<span class="nt">Obrigatório, no YouTube da Unlimited Sports</span></span></div>
-    <div class="ck" data-k="d6"><span class="bx"></span><span class="tx">Atestado médico recente<span class="nt">Recomendado pela organização, com menos de 6 meses</span></span></div>
+    <div class="ck" data-k="d2"><span class="bx"></span><span class="tx">Horário da entrega de kits agendado</span></div>
+    <div class="ck" data-k="d3"><span class="bx"></span><span class="tx">Taxa da federação local paga</span></div>
+    <div class="ck" data-k="d4"><span class="bx"></span><span class="tx">Biometria facial cadastrada</span></div>
+    <div class="ck" data-k="d5"><span class="bx"></span><span class="tx">Congresso técnico assistido</span></div>
+    <div class="ck" data-k="d6"><span class="bx"></span><span class="tx">Ônibus da madrugada comprado no kit<span class="nt">Saída da T2 das 3h às 4h10</span></span></div>
   </div>
 
   <div class="ck-group">
-    <div class="gh"><span class="gt">Natação</span><span class="gc"></span></div>
+    <div class="gh"><span class="tag nat">Natação</span><span class="gc"></span></div>
     <div class="ck" data-k="n1"><span class="bx"></span><span class="tx">Touca oficial da prova<span class="nt">Vem no kit e é a única permitida</span></span></div>
-    <div class="ck" data-k="n2"><span class="bx"></span><span class="tx">Óculos de natação e um reserva<span class="nt">Lente escura ajuda com o sol nascendo</span></span></div>
+    <div class="ck" data-k="n2"><span class="bx"></span><span class="tx">Óculos de natação e um reserva</span></div>
     <div class="ck" data-k="n3"><span class="bx"></span><span class="tx">Macaquinho ou speedsuit<span class="nt">Roupa de borracha só com água a 24,6 °C ou menos</span></span></div>
     <div class="ck" data-k="n4"><span class="bx"></span><span class="tx">Anti-atrito e antiembaçante</span></div>
     <div class="ck" data-k="n5"><span class="bx"></span><span class="tx">Chip no tornozelo</span></div>
   </div>
 
   <div class="ck-group">
-    <div class="gh"><span class="gt">Check-in da bike, sábado</span><span class="gc"></span></div>
-    <div class="ck" data-k="b1"><span class="bx"></span><span class="tx">Adesivos de identificação na bike e no capacete</span></div>
+    <div class="gh"><span class="tag bike">Bike no sábado</span><span class="gc"></span></div>
+    <div class="ck" data-k="b1"><span class="bx"></span><span class="tx">Bike identificada com os adesivos</span></div>
     <div class="ck" data-k="b2"><span class="bx"></span><span class="tx">Câmbio, freios e pneus revisados</span></div>
-    <div class="ck" data-k="b3"><span class="bx"></span><span class="tx">Janela de horário do seu número anotada</span></div>
-    <div class="ck" data-k="b4"><span class="bx"></span><span class="tx">Transporte até o Mosqueiro combinado<span class="nt">A T1 fica longe da arena</span></span></div>
+    <div class="ck" data-k="b3"><span class="bx"></span><span class="tx">Janela do seu número anotada</span></div>
+    <div class="ck" data-k="b4"><span class="bx"></span><span class="tx">Transporte até o Mosqueiro combinado</span></div>
   </div>
 
   <div class="ck-group">
-    <div class="gh"><span class="gt">Material do ciclismo</span><span class="gc"></span></div>
+    <div class="gh"><span class="tag bike">Sacola azul · domingo</span><span class="gc"></span></div>
     <div class="ck" data-k="a1"><span class="bx"></span><span class="tx">Capacete</span></div>
     <div class="ck" data-k="a2"><span class="bx"></span><span class="tx">Sapatilha e meias</span></div>
     <div class="ck" data-k="a3"><span class="bx"></span><span class="tx">Óculos de sol</span></div>
     <div class="ck" data-k="a4"><span class="bx"></span><span class="tx">Garrafas e nutrição do pedal</span></div>
     <div class="ck" data-k="a5"><span class="bx"></span><span class="tx">Sal ou cápsulas de eletrólitos</span></div>
     <div class="ck" data-k="a6"><span class="bx"></span><span class="tx">Kit de reparo: câmara, CO₂ e espátulas</span></div>
-    <div class="ck" data-k="a7"><span class="bx"></span><span class="tx">Bomba para calibrar os pneus no domingo</span></div>
   </div>
 
   <div class="ck-group">
-    <div class="gh"><span class="gt">Material da corrida</span><span class="gc"></span></div>
+    <div class="gh"><span class="tag cor">Sacola vermelha · sábado</span><span class="gc"></span></div>
     <div class="ck" data-k="v1"><span class="bx"></span><span class="tx">Tênis com cadarço elástico</span></div>
     <div class="ck" data-k="v2"><span class="bx"></span><span class="tx">Cinto com o número de peito<span class="nt">Número visível na frente durante a corrida</span></span></div>
     <div class="ck" data-k="v3"><span class="bx"></span><span class="tx">Boné ou viseira</span></div>
     <div class="ck" data-k="v4"><span class="bx"></span><span class="tx">Nutrição da corrida</span></div>
-    <div class="ck" data-k="v5"><span class="bx"></span><span class="tx">Sacola da corrida entregue no sábado na T2</span></div>
+    <div class="ck" data-k="v5"><span class="bx"></span><span class="tx">Sacola entregue na T2 até 18h de sábado</span></div>
   </div>
 
   <div class="ck-group">
-    <div class="gh"><span class="gt">Extras</span><span class="gc"></span></div>
-    <div class="ck" data-k="e1"><span class="bx"></span><span class="tx">Protetor solar resistente à água</span></div>
-    <div class="ck" data-k="e2"><span class="bx"></span><span class="tx">Chinelo e roupa de troca</span></div>
+    <div class="gh"><span class="tag">Sacola branca e extras</span><span class="gc"></span></div>
+    <div class="ck" data-k="e1"><span class="bx"></span><span class="tx">Roupa seca e chinelo na sacola branca</span></div>
+    <div class="ck" data-k="e2"><span class="bx"></span><span class="tx">Protetor solar resistente à água</span></div>
     <div class="ck" data-k="e3"><span class="bx"></span><span class="tx">Uniforme da Equipe Villarinho</span></div>
     <div class="ck" data-k="e4"><span class="bx"></span><span class="tx">Carregador do relógio e do ciclocomputador</span></div>
-    <div class="ck" data-k="e5"><span class="bx"></span><span class="tx">Despertador para umas 2h45<span class="nt">Ônibus para a largada das 3h30 às 4h30</span></span></div>
+    <div class="ck" data-k="e5"><span class="bx"></span><span class="tx">Despertador para umas 2h15</span></div>
   </div>
 
-  <button class="btn o" id="ckreset" style="margin-top:14px">Limpar checklist</button>
+  <button class="btn btn-sec" id="ckreset" style="margin-top:16px">Limpar checklist</button>
 </section>
 
-<!-- ================= MANUAL ================= -->
+<!-- MANUAL -->
 <section id="manual">
-  <h2>Manual da prova</h2>
-  <p class="h2sub">O passo a passo do fim de semana, do check-in à retirada da bike.</p>
+  <span class="rotulo">Manual</span>
+  <h2>Passo a passo da prova</h2>
+  <p class="h2sub">Do kit à retirada da bike.</p>
 
   <div class="card">
-    <div class="passo"><span class="n">01</span><div><h4>Antes de viajar</h4><p>Agende o check-in, assine o termo de saúde, pague o day use da federação e assista ao briefing online. Os links abrem perto da prova e avisamos no grupo.</p></div></div>
-    <div class="passo"><span class="n">02</span><div><h4>Retire o kit no Village</h4><p>Quinta das 14h às 18h, sexta das 9h às 18h ou sábado só até 12h, na Praia de Atalaia, no horário que você agendou. Leve documento com foto.</p></div></div>
-    <div class="passo"><span class="n">03</span><div><h4>Sábado à tarde: bike e sacola</h4><p>Leve a bike adesivada para a Transição 1, no Mosqueiro, entre 13h e 19h na janela do seu número. A Transição 2, na Atalaia, fica aberta das 13h às 20h para a sacola da corrida. Organize o transporte antes: são dois lugares distantes.</p></div></div>
-    <div class="passo"><span class="n">04</span><div><h4>Domingo de madrugada</h4><p>Pegue o ônibus na T2 entre 3h30 e 4h30. A Transição 1 abre às 4h e fecha às 5h15. Calibre os pneus, monte a nutrição e saia da transição com calma para o rolling start.</p></div></div>
-    <div class="passo"><span class="n">05</span><div><h4>Durante a prova</h4><p>Natação no rio, Transição 1, 90 km de bike sem vácuo e com capacete sempre afivelado, Transição 2 na Atalaia e 21,1 km de corrida com o número visível na frente. Lixo só nas zonas de descarte dos postos.</p></div></div>
-    <div class="passo"><span class="n">06</span><div><h4>Depois da chegada</h4><p>Retirada da bike e das sacolas das 12h30 às 15h30 na Transição 2. Confira tudo na hora: achados e perdidos funciona só nesse período. Premiação às 18h30 e vagas do Mundial às 19h30.</p></div></div>
+    <div class="passo"><span class="n">1</span><div><h4>Antes de viajar</h4><p>Agende a entrega de kits, pague a taxa da federação e cadastre a biometria facial. Os links abrem perto da prova e avisamos no grupo.</p></div></div>
+    <div class="passo"><span class="n">2</span><div><h4>Retire o kit no Village</h4><p>Qui das 14h às 18h, sex das 9h às 18h ou sáb só até 12h, na Praia de Atalaia. Leve documento com foto e já compre o ônibus de domingo.</p></div></div>
+    <div class="passo"><span class="n">3</span><div><h4>Sábado: sacola vermelha e bike</h4><p>Entregue a sacola vermelha na T2, na Atalaia, entre 10h e 18h. Depois leve a bike identificada para a T1, no Mosqueiro, na janela do seu número entre 14h e 18h.</p></div></div>
+    <div class="passo"><span class="n">4</span><div><h4>Domingo de madrugada</h4><p>Ônibus da T2 entre 3h e 4h10. A T1 abre às 3h30 e fecha às 5h. Sacola azul ao lado da bike, sacola branca na tenda. Largada dos amadores entre 5h15 e 5h35.</p></div></div>
+    <div class="passo"><span class="n">5</span><div><h4>Durante a prova</h4><p>Natação no rio, T1, 90 km de bike sem vácuo e com capacete afivelado, T2 na Atalaia e 21,1 km com o número visível na frente. Lixo só nas zonas de descarte dos postos.</p></div></div>
+    <div class="passo"><span class="n">6</span><div><h4>Depois da chegada</h4><p>Bike e sacolas das 12h às 15h na T2. Confira tudo na hora: achados e perdidos funciona só nesse período. Premiação e vagas do Mundial às 17h30.</p></div></div>
   </div>
 
   <h3>Tempos limites</h3>
-  <div class="lim">
-    <div><div class="v">1h10</div><div class="k">Natação</div></div>
-    <div><div class="v">5h00</div><div class="k">Até o fim do bike</div></div>
-    <div><div class="v">8h30</div><div class="k">Prova completa</div></div>
+  <div class="kpis">
+    <div class="kpi"><div class="lbl">Natação</div><div class="v">1h10</div></div>
+    <div class="kpi"><div class="lbl">Fim da bike</div><div class="v">5h</div></div>
+    <div class="kpi"><div class="lbl">Prova</div><div class="v">8h30</div></div>
   </div>
-  <p class="tiny" style="margin-bottom:8px">Contados a partir da sua largada, conforme o regulamento 2026. Quem passar do limite de uma etapa é retirado do percurso.</p>
+  <p class="tiny">Contados a partir da sua largada, conforme o regulamento 2026.</p>
 
   <h3>As sacolas</h3>
   <div class="card">
-    <div class="saco"><span class="sw" style="background:#2E6BC0"></span><div><b>Material do ciclismo</b><p class="muted small">Capacete, sapatilha, óculos e nutrição do pedal, na Transição 1, no Mosqueiro.</p></div></div>
-    <div class="saco"><span class="sw" style="background:#B8262C"></span><div><b>Material da corrida</b><p class="muted small">Tênis, boné, cinto de número e nutrição da corrida, entregue no sábado na Transição 2, na Atalaia. Em 2025 a sacola vermelha só era aceita no sábado.</p></div></div>
-    <div class="saco"><span class="sw" style="background:#9A928B"></span><div><b>Pertences pessoais</b><p class="muted small">Sua roupa e itens do dia a dia, entregues na manhã da prova para retirar depois da chegada. O GPS do pedal vai na sacola depois do ciclismo.</p></div></div>
+    <div class="saco"><span class="sw" style="background:#2E6BC0"></span><div><b>Sacola azul · ciclismo</b><p class="muted small">Capacete, sapatilha, óculos e nutrição do pedal. Vai com você no domingo para a T1, ao lado da bike.</p></div></div>
+    <div class="saco"><span class="sw" style="background:#ED1C24"></span><div><b>Sacola vermelha · corrida</b><p class="muted small">Tênis, boné, cinto de número e nutrição da corrida. Só no sábado, na T2, das 10h às 18h.</p></div></div>
+    <div class="saco"><span class="sw" style="background:#FFFFFF"></span><div><b>Sacola branca · roupa seca</b><p class="muted small">Entregue no domingo na tenda da T1 e retirada depois da prova.</p></div></div>
   </div>
-  <p class="tiny">Cores e regras finais das sacolas saem no guia do atleta 2026. Regulamento completo na página oficial da Unlimited Sports.</p>
+  <p class="tiny">O Guia do Atleta 2026 sai até um mês antes da prova. Enquanto isso vale o de 2025 como referência.</p>
+  <a class="btn btn-sec" href="https://unlimitedsports.com.br/ironman-70-3-sergipe/guia-do-atleta-ironman-70-3-sergipe/" target="_blank" rel="noopener">Guia do Atleta</a>
+  <a class="btn btn-sec" href="https://unlimitedsports.com.br/ironman-70-3-sergipe/regulamento-ironman-70-3-sergipe/" target="_blank" rel="noopener">Regulamento</a>
 </section>
 
-<!-- ================= DICAS ================= -->
+<!-- DICAS -->
 <section id="dicas">
-  <h2>Dicas dos treinadores</h2>
-  <p class="h2sub">Seis coisas para levar a sério nesta prova.</p>
-
+  <span class="rotulo">Dicas dos treinadores</span>
+  <h2>Seis cuidados para Aracaju</h2>
+  <p class="h2sub">O que mais faz diferença nesta prova.</p>
   <div class="card">
-    <div class="dica"><span class="i">01</span><p>Aracaju é calor e umidade, e em 2025 o sol forte marcou a prova. Hidratação começa na semana: ande com a sua garrafa durante o dia e reforce o sal nos treinos e na prova.</p></div>
-    <div class="dica"><span class="i">02</span><p>Na corrida, use todos os postos: água na cabeça, gelo se houver, e beba desde o km 1. Não espere a sede, porque na orla quase não tem sombra.</p></div>
-    <div class="dica"><span class="i">03</span><p>Treine sem roupa de borracha. Com a água quente ela costuma ser proibida, e quem nunca nadou forte sem ela sente a diferença na saída.</p></div>
-    <div class="dica"><span class="i">04</span><p>A logística é o ponto mais delicado do fim de semana: a bike fica no Mosqueiro e o resto na Atalaia. Planeje o sábado à tarde com tempo e durma cedo, porque o ônibus sai de madrugada.</p></div>
-    <div class="dica"><span class="i">05</span><p>Regra de ouro: nada de novo no dia da prova. Nada de estrear tênis, gel, roupa ou peça comprada na expo. Testou no treino? Pode usar.</p></div>
-    <div class="dica"><span class="i">06</span><p>Usar o uniforme da equipe ajuda a torcida a ver vocês, gritar, tirar fotos e fazer vídeos. Se puder, use!</p></div>
+    <div class="dica"><span class="i">01</span><p>Aracaju é calor e umidade. Hidratação começa na semana: ande com a sua garrafa durante o dia e reforce o sal nos treinos e na prova.</p></div>
+    <div class="dica"><span class="i">02</span><p>Na corrida, use todos os postos: água na cabeça, gelo se houver, e beba desde o km 1. Na orla quase não tem sombra.</p></div>
+    <div class="dica"><span class="i">03</span><p>Treine sem roupa de borracha. Com a água quente ela costuma ser proibida e quem nunca nadou forte sem ela sente na saída.</p></div>
+    <div class="dica"><span class="i">04</span><p>A logística é o ponto mais delicado: bike no Mosqueiro, resto na Atalaia, ônibus às 3h. Resolva o sábado com calma e durma cedo.</p></div>
+    <div class="dica"><span class="i">05</span><p>Nada de novo no dia da prova. Nada de estrear tênis, gel, roupa ou peça comprada na expo. Testou no treino? Pode usar.</p></div>
+    <div class="dica"><span class="i">06</span><p>Venha de uniforme da Villarinho. Ajuda a torcida a achar você, gritar e fazer as fotos da equipe.</p></div>
   </div>
 </section>
 
-<!-- ================= PARCEIROS ================= -->
+<!-- PARCEIROS -->
 <section id="parceiros">
-  <h2>Aracaju &amp; parceiros</h2>
-  <p class="h2sub">Contatos úteis, emergência e os cupons da equipe.</p>
-
-  <h3>Arena</h3>
-  <div class="card acc">
-    <b>IRONMAN Village · Praia de Atalaia</b>
-    <p class="muted small" style="margin:5px 0 12px">Av. Santos Dumont, 1800, Atalaia. Entrada gratuita, aberto de quinta a domingo.</p>
-    <a class="lk" href="https://unlimitedsports.com.br/en/ironman-village-ironman-70-3-aracaju-eng/" target="_blank" rel="noopener">IRONMAN Village</a>
-    <a class="lk" href="https://unlimitedsports.com.br/en/ironman-70-3-aracaju-en/spectator-guide-ironman-70-3-aracaju-ingles/" target="_blank" rel="noopener">Guia do espectador</a>
-  </div>
-
-  <h3>Mecânico, fisio e transporte</h3>
-  <div class="card">
-    <p class="muted small">A comissão técnica vai confirmar mecânico, fisioterapia e transporte para o Mosqueiro. Assim que estiver fechado, entra aqui e no grupo da prova.</p>
-  </div>
-
-  <h3>Emergência</h3>
-  <div class="card">
-    <div class="tel"><span class="small">SAMU</span><b><a href="tel:192" style="text-decoration:none;color:inherit">192</a></b></div>
-    <div class="tel"><span class="small">Bombeiros</span><b><a href="tel:193" style="text-decoration:none;color:inherit">193</a></b></div>
-    <div class="tel"><span class="small">Polícia</span><b><a href="tel:190" style="text-decoration:none;color:inherit">190</a></b></div>
-  </div>
+  <span class="rotulo">Parceiros</span>
+  <h2>Cupons e contatos</h2>
+  <p class="h2sub">Cupons da equipe, arena e emergência.</p>
 
   <h3>Cupons da equipe</h3>
   <div class="card">
     <p class="tiny" style="margin-bottom:4px">Toque no cupom para copiar.</p>
-    <div class="cup">
-      <div><b>Z2 Performance</b><div class="ad">Suplementos da prova: géis, carboidrato e hidratação<br><a href="https://z2performance.com" target="_blank" rel="noopener">z2performance.com</a></div></div>
-      <button class="cd" data-c="Z2VILLARINHO">Z2VILLARINHO</button>
-    </div>
-    <div class="cup">
-      <div><b>TRI Designs</b><div class="ad">Roupas de borracha e curadoria dos melhores produtos de triathlon<br><a href="https://www.tridesigns.com.br" target="_blank" rel="noopener">tridesigns.com.br</a></div></div>
-      <button class="cd" data-c="VILLARINHO">VILLARINHO</button>
-    </div>
-    <div class="cup">
-      <div><b>WOOM</b><div class="ad">Vestuário de corrida e triathlon<br><a href="https://www.woom.com.br" target="_blank" rel="noopener">woom.com.br</a></div></div>
-      <button class="cd" data-c="VILLARINHO10">VILLARINHO10</button>
-    </div>
-    <div class="cup">
-      <div><b>FILA</b><div class="ad">Tênis e vestuário<br><a href="https://www.fila.com.br" target="_blank" rel="noopener">fila.com.br</a></div></div>
-      <button class="cd" data-c="VILLARINHO15">VILLARINHO15</button>
-    </div>
+    <div class="cup"><div><b>Z2 Performance</b><div class="ad">Géis, carboidrato e hidratação</div></div><button class="cd" data-c="Z2VILLARINHO">Z2VILLARINHO</button></div>
+    <div class="cup"><div><b>TRI Designs</b><div class="ad">Roupas de borracha e produtos de triathlon</div></div><button class="cd" data-c="VILLARINHO">VILLARINHO</button></div>
+    <div class="cup"><div><b>WOOM</b><div class="ad">Vestuário de corrida e triathlon</div></div><button class="cd" data-c="VILLARINHO10">VILLARINHO10</button></div>
+    <div class="cup"><div><b>FILA</b><div class="ad">Tênis e vestuário</div></div><button class="cd" data-c="VILLARINHO15">VILLARINHO15</button></div>
+  </div>
+
+  <h3>Mecânico, fisio e transporte</h3>
+  <div class="card"><p class="muted small">A comissão técnica vai confirmar mecânico, fisioterapia e transporte para o Mosqueiro. Assim que estiver fechado, entra aqui e no grupo da prova.</p></div>
+
+  <h3>Arena</h3>
+  <div class="card">
+    <b>IRONMAN Village · Praia de Atalaia</b>
+    <p class="muted small" style="margin-top:4px">Entrada gratuita de quinta a domingo.</p>
+    <a class="lk" href="https://unlimitedsports.com.br/ironman-70-3-sergipe/guia-da-torcida-sergipe/" target="_blank" rel="noopener">Guia da torcida</a>
+    <a class="lk" href="https://unlimitedsports.com.br/ironman-70-3-sergipe/vagas-para-o-mundial-ironman-70-3-sergipe/" target="_blank" rel="noopener">Vagas para o Mundial</a>
+  </div>
+
+  <h3>Emergência</h3>
+  <div class="card">
+    <div class="tel"><span class="small">SAMU</span><a href="tel:192">192</a></div>
+    <div class="tel"><span class="small">Bombeiros</span><a href="tel:193">193</a></div>
+    <div class="tel"><span class="small">Polícia</span><a href="tel:190">190</a></div>
   </div>
 </section>
 
-<!-- ================= ACOMPANHE ================= -->
+<!-- EQUIPE -->
 <section id="acompanhe">
-  <h2>Acompanhe a prova</h2>
-  <p class="h2sub">Os atletas da Equipe Villarinho no dia 29 de novembro e como entrar no nosso TriClub.</p>
+  <span class="rotulo">Equipe Villarinho</span>
+  <h2>Nossos atletas na largada</h2>
+  <p class="h2sub">24 atletas da Villarinho no dia 29/11, com o número de peito oficial.</p>
 
-  <h3>Onde acompanhar ao vivo</h3>
-  <div class="card acc">
-    <b>IRONMAN Tracker</b>
-    <p class="muted small" style="margin:5px 0 12px">Baixe o app IRONMAN Tracker, busque pelo número de peito ou pelo nome do atleta e acompanhe as parciais de natação, bike e corrida em tempo real.</p>
-    <a class="btn" href="https://www.ironman.com/tracker" target="_blank" rel="noopener">Abrir o IRONMAN Tracker</a>
-    <a class="btn o" href="https://unlimitedsports.com.br/resultados/" target="_blank" rel="noopener">Resultados</a>
-  </div>
-  <div class="card">
-    <p class="small"><b>Dica para a torcida:</b> a largada é longe da arena e de madrugada. O melhor lugar para torcer é a Orla de Atalaia, onde passa o fim do pedal, toda a corrida e a chegada.</p>
-  </div>
-
-  <h3>Atletas da equipe</h3>
   <div class="card">
     <input class="busca" id="buscabib" type="search" placeholder="Buscar por nome ou número" aria-label="Buscar atleta da equipe">
     <div id="listabib">
-      <div class="bib" data-b="diogo andrade villarinho pro"><span class="n pro">PRO</span><div><div class="nm">Diogo Andrade Villarinho</div><div class="ct">Elite / PRO</div></div></div>
-      <div class="bib" data-b="joao teixeira pro"><span class="n pro">PRO</span><div><div class="nm">Joao Teixeira</div><div class="ct">Elite / PRO</div></div></div>
-      <div class="bib" data-b="bruno tomazini"><span class="n tbd">a definir</span><div><div class="nm">Bruno Tomazini</div></div></div>
-      <div class="bib" data-b="edson auriema"><span class="n tbd">a definir</span><div><div class="nm">Edson Auriema</div></div></div>
-      <div class="bib" data-b="gustavo luiz souza martins"><span class="n tbd">a definir</span><div><div class="nm">Gustavo Luiz Souza Martins</div></div></div>
-      <div class="bib" data-b="henrique oliveira carneiro"><span class="n tbd">a definir</span><div><div class="nm">Henrique Oliveira Carneiro</div></div></div>
-      <div class="bib" data-b="julia wanderley"><span class="n tbd">a definir</span><div><div class="nm">Julia Wanderley</div></div></div>
-      <div class="bib" data-b="leonardo crema"><span class="n tbd">a definir</span><div><div class="nm">Leonardo Crema</div></div></div>
-      <div class="bib" data-b="matheus alves auriema"><span class="n tbd">a definir</span><div><div class="nm">Matheus Alves Auriema</div></div></div>
-      <div class="bib" data-b="vinicius vinícius ferreira amim"><span class="n tbd">a definir</span><div><div class="nm">Vinícius Ferreira Amim</div></div></div>
-      <div class="bib" data-b="yashmim danielle santos silva"><span class="n tbd">a definir</span><div><div class="nm">Yashmim Danielle Santos Silva</div></div></div>
+      <div class="bib" data-b="135 ernesto carlos carneiro alves"><span class="n">135</span><div><div class="nm">Ernesto Carlos Carneiro Alves</div><div class="ct">Masculino 40–44</div></div></div>
+      <div class="bib" data-b="323 rogerio giovanny oliveira silva"><span class="n">323</span><div><div class="nm">Rogerio Giovanny Oliveira Silva</div><div class="ct">Masculino 45–49</div></div></div>
+      <div class="bib" data-b="351 marcelo de oliveira machado"><span class="n">351</span><div><div class="nm">Marcelo de Oliveira Machado</div><div class="ct">Masculino 45–49</div></div></div>
+      <div class="bib" data-b="483 kelly caldeira cavalcante de morais"><span class="n">483</span><div><div class="nm">Kelly Caldeira Cavalcante de Morais</div><div class="ct">Feminino 40–44</div></div></div>
+      <div class="bib" data-b="487 sabrina yuri hatayama shiraishi"><span class="n">487</span><div><div class="nm">Sabrina Yuri Hatayama Shiraishi</div><div class="ct">Feminino 40–44</div></div></div>
+      <div class="bib" data-b="497 maria tereza lemes moreira carneiro"><span class="n">497</span><div><div class="nm">Maria Tereza Lemes Moreira Carneiro</div><div class="ct">Feminino 40–44</div></div></div>
+      <div class="bib" data-b="548 fernanda loureiro de almeida osullivan"><span class="n">548</span><div><div class="nm">Fernanda Loureiro de Almeida O&#x27;Sullivan</div><div class="ct">Feminino 45–49</div></div></div>
+      <div class="bib" data-b="554 matheus de paula ramos gilberti"><span class="n">554</span><div><div class="nm">Matheus de Paula Ramos Gilberti</div><div class="ct">Masculino 30–34</div></div></div>
+      <div class="bib" data-b="564 murillo carvalho de sousa"><span class="n">564</span><div><div class="nm">Murillo Carvalho de Sousa</div><div class="ct">Masculino 30–34</div></div></div>
+      <div class="bib" data-b="581 diogo andrade villarinho"><span class="n">581</span><div><div class="nm">Diogo Andrade Villarinho</div><div class="ct">Masculino 30–34</div></div></div>
+      <div class="bib" data-b="592 arthur fraiha hastings"><span class="n">592</span><div><div class="nm">Arthur Fraiha Hastings</div><div class="ct">Masculino 30–34</div></div></div>
+      <div class="bib" data-b="597 paulo victor campos pedroso"><span class="n">597</span><div><div class="nm">Paulo Victor Campos Pedroso</div><div class="ct">Masculino 30–34</div></div></div>
+      <div class="bib" data-b="598 alexandre jayme paniago"><span class="n">598</span><div><div class="nm">Alexandre Jayme Paniago</div><div class="ct">Masculino 30–34</div></div></div>
+      <div class="bib" data-b="608 brunno daniel duarte alves"><span class="n">608</span><div><div class="nm">Brunno Daniel Duarte Alves</div><div class="ct">Masculino 30–34</div></div></div>
+      <div class="bib" data-b="754 plinio santos de oliveira"><span class="n">754</span><div><div class="nm">Plinio Santos de Oliveira</div><div class="ct">Masculino 35–39</div></div></div>
+      <div class="bib" data-b="943 anaise laurene de paula moreira"><span class="n">943</span><div><div class="nm">Anaise Laurene de Paula Moreira</div><div class="ct">Feminino 35–39</div></div></div>
+      <div class="bib" data-b="1031 rafael mendes de souza"><span class="n">1031</span><div><div class="nm">Rafael Mendes de Souza</div><div class="ct">Masculino 25–29</div></div></div>
+      <div class="bib" data-b="1116 matheus alves auriema"><span class="n">1116</span><div><div class="nm">Matheus Alves Auriema</div><div class="ct">Masculino 25–29</div></div></div>
+      <div class="bib" data-b="1142 gislene claudia almeida luz"><span class="n">1142</span><div><div class="nm">Gislene Claudia Almeida Luz</div><div class="ct">Feminino 55–59</div></div></div>
+      <div class="bib" data-b="1162 leonardo navarro aquilino"><span class="n">1162</span><div><div class="nm">Leonardo Navarro Aquilino</div><div class="ct">Masculino 50–54</div></div></div>
+      <div class="bib" data-b="1178 gilbert rabelo"><span class="n">1178</span><div><div class="nm">Gilbert Rabelo</div><div class="ct">Masculino 50–54</div></div></div>
+      <div class="bib" data-b="1184 igor alves do prado"><span class="n">1184</span><div><div class="nm">Igor Alves do Prado</div><div class="ct">Masculino 50–54</div></div></div>
+      <div class="bib" data-b="1230 fernando viggiano"><span class="n">1230</span><div><div class="nm">Fernando Viggiano</div><div class="ct">Masculino 50–54</div></div></div>
+      <div class="bib" data-b="1297 yashmim danielle santos silva"><span class="n">1297</span><div><div class="nm">Yashmim Danielle Santos Silva</div><div class="ct">Feminino 18–24</div></div></div>
     </div>
     <div class="vazio" id="vaziobib">Nenhum atleta encontrado com esse nome ou número.</div>
-    <p class="tiny" style="margin-top:12px">Lista pelos alunos com a prova marcada no TrainingPeaks. Os números de peito entram quando a Unlimited Sports publicar a lista oficial. Está correndo pela equipe e não aparece aqui? Avise a comissão técnica.</p>
+    <p class="tiny" style="margin-top:12px">Pela lista oficial de inscritos da Unlimited Sports, atletas com Villarinho no campo TriClub. Está correndo pela equipe e não aparece aqui? Ajuste o TriClub no seu perfil da IRONMAN e avise a comissão técnica.</p>
   </div>
 
-  <h3>Bora brigar pelo TriClub</h3>
-  <div class="card team">
-    <p class="small">Cada atleta que cruza a linha de chegada com a <b>Equipe Villarinho</b> marcada no perfil da IRONMAN pontua para o clube no ranking mundial de TriClubs. Quanto mais gente afiliada, mais alto a equipe chega. É de graça e leva dois minutos.</p>
-  </div>
+  <h3>Acompanhe ao vivo</h3>
   <div class="card">
-    <div class="passo"><span class="n">01</span><div><h4>Entre no site da IRONMAN</h4><p>Acesse ironman.com pelo computador ou celular e entre na sua conta.</p></div></div>
-    <div class="passo"><span class="n">02</span><div><h4>Crie a conta, se ainda não tiver</h4><p>Use o mesmo e-mail da sua inscrição na prova. Assim seus resultados aparecem automaticamente no perfil.</p></div></div>
-    <div class="passo"><span class="n">03</span><div><h4>Abra o seu perfil de atleta</h4><p>No menu da conta, procure por “My Athlete Profile” ou a área de perfil.</p></div></div>
-    <div class="passo"><span class="n">04</span><div><h4>Vá até a área de TriClub</h4><p>Procure a seção “TriClub” ou “Find a Club” dentro do perfil.</p></div></div>
-    <div class="passo"><span class="n">05</span><div><h4>Busque por Villarinho</h4><p>Digite “Villarinho” na busca e selecione a Equipe Villarinho. Na dúvida, confirme com a comissão técnica antes de salvar.</p></div></div>
-    <div class="passo"><span class="n">06</span><div><h4>Salve e confira</h4><p>Entre no clube e salve. Se o clube aparecer no seu perfil com a data de entrada, está feito.</p></div></div>
+    <p class="muted small" style="margin-bottom:10px">No app IRONMAN Tracker, busque pelo número ou nome e veja as parciais em tempo real. Para a torcida, o melhor lugar é a Orla de Atalaia: fim do pedal, toda a corrida e a chegada.</p>
+    <a class="btn btn-principal" href="https://www.ironman.com/tracker" target="_blank" rel="noopener">IRONMAN Tracker</a>
+    <a class="btn btn-sec" href="https://unlimitedsports.com.br/resultados/" target="_blank" rel="noopener">Resultados</a>
   </div>
+
+  <h3>Vamos subir no ranking de TriClubs</h3>
   <div class="card">
-    <p class="small"><b>Faça isso antes de domingo.</b> A afiliação precisa estar ativa no dia da prova para o seu resultado contar para a equipe.</p>
+    <p class="small" style="margin-bottom:6px">Cada atleta que cruza a chegada com a <b style="font-size:inherit">Equipe Villarinho</b> no perfil da IRONMAN pontua para o clube no ranking mundial. É de graça e leva dois minutos.</p>
+    <div class="passo"><span class="n">1</span><div><h4>Entre no ironman.com</h4><p>Use o mesmo e-mail da sua inscrição, assim os resultados aparecem no perfil.</p></div></div>
+    <div class="passo"><span class="n">2</span><div><h4>Abra o seu perfil de atleta</h4><p>No menu da conta, procure “My Athlete Profile”.</p></div></div>
+    <div class="passo"><span class="n">3</span><div><h4>Busque o clube</h4><p>Na área “TriClub”, digite Villarinho e selecione a Equipe Villarinho.</p></div></div>
+    <div class="passo"><span class="n">4</span><div><h4>Salve antes de domingo</h4><p>A afiliação precisa estar ativa no dia da prova para o resultado contar.</p></div></div>
   </div>
 </section>
 
@@ -566,12 +602,27 @@ footer .fn{font-size:11px;color:var(--tinta-3);margin-top:10px;line-height:1.5}
 
 <footer>
   <div class="wrap">
-    <div class="nm">EQUIPE VILLARINHO</div>
-    <p class="fn">Guia da equipe para o IRONMAN 70.3 Aracaju 2026 · atualizado em 20/10/2026.<br>Programação e regras conforme o site e o regulamento da Unlimited Sports, sujeitos a alteração.</p>
+    <img class="logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iODU4IiBoZWlnaHQ9IjIzOSIgdmlld0JveD0iNTIgNzIgODU4IDIzOSI+CjxwYXRoIGZpbGwtcnVsZT0ibm9uemVybyIgZmlsbD0iI0ZGRkZGRiIgZmlsbC1vcGFjaXR5PSIxIiBkPSJNIDg2OC4zMTI1IDI5NS45ODA0NjkgQyA4NjAuNTAzOTA2IDI5NS45ODA0NjkgODU0LjIxODc1IDI4OS4xOTUzMTIgODU0LjIxODc1IDI4MC4yMTA5MzggQyA4NTQuMjE4NzUgMjcxLjU5Mzc1IDg2MC41MDM5MDYgMjY1LjEwOTM3NSA4NjguMzEyNSAyNjUuMTA5Mzc1IEMgODc2LjEzMjgxMiAyNjUuMTA5Mzc1IDg4Mi40MTQwNjIgMjcxLjU5Mzc1IDg4Mi40MTQwNjIgMjgwLjIxMDkzOCBDIDg4Mi40MTQwNjIgMjg5LjE5NTMxMiA4NzYuMTMyODEyIDI5NS45ODA0NjkgODY4LjMxMjUgMjk1Ljk4MDQ2OSBNIDg2OC4zMTI1IDI1My4zMTY0MDYgQyA4NTIuNTM5MDYyIDI1My4zMTY0MDYgODQwLjk5NjA5NCAyNjUuMTA5Mzc1IDg0MC45OTYwOTQgMjgwLjIxMDkzOCBDIDg0MC45OTYwOTQgMjk1LjY4MzU5NCA4NTIuNTM5MDYyIDMwNy43NjU2MjUgODY4LjMxMjUgMzA3Ljc2NTYyNSBDIDg4NC4wOTM3NSAzMDcuNzY1NjI1IDg5NS42MzI4MTIgMjk1LjY4MzU5NCA4OTUuNjMyODEyIDI4MC4yMTA5MzggQyA4OTUuNjMyODEyIDI2NS4xMDkzNzUgODg0LjA5Mzc1IDI1My4zMTY0MDYgODY4LjMxMjUgMjUzLjMxNjQwNiBNIDc0Ny4zMTY0MDYgMzA2Ljg4MjgxMiBMIDc2MC4xMDE1NjIgMzA2Ljg4MjgxMiBMIDc2MC4xMDE1NjIgMjg2LjI1IEwgNzc5LjA4OTg0NCAyODYuMjUgTCA3NzkuMDg5ODQ0IDMwNi44ODI4MTIgTCA3OTEuODcxMDk0IDMwNi44ODI4MTIgTCA3OTEuODcxMDk0IDI1NC4yMDMxMjUgTCA3NzkuMDg5ODQ0IDI1NC4yMDMxMjUgTCA3NzkuMDg5ODQ0IDI3NS4yNzM0MzggTCA3NjAuMTAxNTYyIDI3NS4yNzM0MzggTCA3NjAuMTAxNTYyIDI1NC4yMDMxMjUgTCA3NDcuMzE2NDA2IDI1NC4yMDMxMjUgWiBNIDY0OS41MDM5MDYgMzA2LjIxODc1IEwgNjYyLjI3NzM0NCAzMDYuMjE4NzUgTCA2NjIuMjc3MzQ0IDI4MS42ODM1OTQgQyA2NjIuMjc3MzQ0IDI3OC4zNzUgNjYxLjY5NTMxMiAyNzIuNjk1MzEyIDY2MS42OTUzMTIgMjcyLjY5NTMxMiBMIDY2MS44NDM3NSAyNzIuNjk1MzEyIEMgNjYxLjg0Mzc1IDI3Mi42OTUzMTIgNjY0LjE4NzUgMjc4LjIyNjU2MiA2NjYuMjI2NTYyIDI4MS42ODM1OTQgTCA2ODAuNzYxNzE5IDMwNi4yMTg3NSBMIDY5My42MjEwOTQgMzA2LjIxODc1IEwgNjkzLjYyMTA5NCAyNTMuNTM5MDYyIEwgNjgwLjgzNTkzOCAyNTMuNTM5MDYyIEwgNjgwLjgzNTkzOCAyNzguMTQ4NDM4IEMgNjgwLjgzNTkzOCAyODEuNDY0ODQ0IDY4MS40MTc5NjkgMjg3LjEzNjcxOSA2ODEuNDE3OTY5IDI4Ny4xMzY3MTkgTCA2ODEuMjczNDM4IDI4Ny4xMzY3MTkgQyA2ODEuMjczNDM4IDI4Ny4xMzY3MTkgNjc4LjkzNzUgMjgxLjYwOTM3NSA2NzYuODkwNjI1IDI3OC4xNDg0MzggTCA2NjIuNDI5Njg4IDI1My41MzkwNjIgTCA2NDkuNTAzOTA2IDI1My41MzkwNjIgWiBNIDU4My42Njc5NjkgMzA2Ljg3ODkwNiBMIDU5Ni40NTMxMjUgMzA2Ljg3ODkwNiBMIDU5Ni40NTMxMjUgMjU0LjIwMzEyNSBMIDU4My42Njc5NjkgMjU0LjIwMzEyNSBaIE0gNTA2Ljg2MzI4MSAyNzguMDc0MjE5IEwgNTA2Ljg2MzI4MSAyNjUuMjU3ODEyIEwgNTExLjE3NTc4MSAyNjUuMjU3ODEyIEMgNTE3LjYwMTU2MiAyNjUuMjU3ODEyIDUxOS4wNjY0MDYgMjY3LjYxMzI4MSA1MTkuMDY2NDA2IDI3MS41OTM3NSBDIDUxOS4wNjY0MDYgMjc1Ljc4OTA2MiA1MTYuNTAzOTA2IDI3OC4wNzQyMTkgNTEyLjQxNDA2MiAyNzguMDc0MjE5IFogTSA0OTQuMDg1OTM4IDMwNi44ODI4MTIgTCA1MDYuODYzMjgxIDMwNi44ODI4MTIgTCA1MDYuODYzMjgxIDI4OS4xMjUgTCA1MTIuODUxNTYyIDI4OS4xMjUgTCA1MjIuMTI4OTA2IDMwNi44ODI4MTIgTCA1MzYuMzcxMDk0IDMwNi44ODI4MTIgTCA1MjYuMjIyNjU2IDI4OC40NjA5MzggQyA1MjQuOTg0Mzc1IDI4Ni4yNSA1MjQuMjUgMjg1LjI5Mjk2OSA1MjQuMjUgMjg1LjI5Mjk2OSBMIDUyNC4yNSAyODUuMTUyMzQ0IEMgNTI5LjQ0MTQwNiAyODIuNDk2MDk0IDUzMi4wNjY0MDYgMjc2LjM3NSA1MzIuMDY2NDA2IDI3MC43ODUxNTYgQyA1MzIuMDY2NDA2IDI2My4xMjEwOTQgNTI4LjM0Mzc1IDI1Ny43NDIxODggNTIyLjQyNTc4MSAyNTUuNDYwOTM4IEMgNTIwLjE2NDA2MiAyNTQuNTc0MjE5IDUxNy42MDE1NjIgMjU0LjIwMzEyNSA1MTIuMjY5NTMxIDI1NC4yMDMxMjUgTCA0OTQuMDg1OTM4IDI1NC4yMDMxMjUgWiBNIDQyNC4wNzQyMTkgMjY2LjIxNDg0NCBDIDQyNC4wNzQyMTkgMjY2LjIxNDg0NCA0MjUuMjM0Mzc1IDI3MS45NjA5MzggNDI2LjE4NzUgMjc1LjI3MzQzOCBMIDQyOS4xMTcxODggMjg1LjUxMTcxOSBMIDQxOC44MTI1IDI4NS41MTE3MTkgTCA0MjEuODA0Njg4IDI3NS4yNzM0MzggQyA0MjIuNzUzOTA2IDI3MS45NjA5MzggNDIzLjkyMTg3NSAyNjYuMjE0ODQ0IDQyMy45MjE4NzUgMjY2LjIxNDg0NCBaIE0gNDM1LjMyMDMxMiAzMDYuODc4OTA2IEwgNDQ4LjQ2NDg0NCAzMDYuODc4OTA2IEwgNDMwLjcxODc1IDI1NC4yMDMxMjUgTCA0MTcuMjc3MzQ0IDI1NC4yMDMxMjUgTCAzOTkuNTI3MzQ0IDMwNi44Nzg5MDYgTCA0MTIuNjc1NzgxIDMwNi44Nzg5MDYgTCA0MTUuODIwMzEyIDI5NS44MzIwMzEgTCA0MzIuMTA1NDY5IDI5NS44MzIwMzEgWiBNIDMyMS42MTMyODEgMzA4LjIxMDkzOCBMIDM1NS43MzA0NjkgMzA4LjIxMDkzOCBMIDM1NS43MzA0NjkgMjk3LjE2MDE1NiBMIDMzNC4zOTg0MzggMjk3LjE2MDE1NiBMIDMzNC4zOTg0MzggMjU1LjUzMTI1IEwgMzIxLjYxMzI4MSAyNTUuNTMxMjUgWiBNIDI0MC4wNTQ2ODggMzA2Ljg4MjgxMiBMIDI3NC4xNzE4NzUgMzA2Ljg4MjgxMiBMIDI3NC4xNzE4NzUgMjk1LjgzMjAzMSBMIDI1Mi44MzU5MzggMjk1LjgzMjAzMSBMIDI1Mi44MzU5MzggMjU0LjIwMzEyNSBMIDI0MC4wNTQ2ODggMjU0LjIwMzEyNSBaIE0gMTc0LjU2NjQwNiAzMDYuODc4OTA2IEwgMTg3LjM0NzY1NiAzMDYuODc4OTA2IEwgMTg3LjM0NzY1NiAyNTQuMjAzMTI1IEwgMTc0LjU2NjQwNiAyNTQuMjAzMTI1IFogTSA3OC4yNTM5MDYgMjU0LjIwMzEyNSBMIDkyLjEyNSAyNTQuMjAzMTI1IEwgMTAxLjMzNTkzOCAyODQuMTkxNDA2IEMgMTAyLjM1NTQ2OSAyODcuNTA3ODEyIDEwMy4zMDg1OTQgMjkyLjY2MDE1NiAxMDMuMzA4NTk0IDI5Mi42NjAxNTYgTCAxMDMuNDUzMTI1IDI5Mi42NjAxNTYgQyAxMDMuNDUzMTI1IDI5Mi42NjAxNTYgMTA0LjQwNjI1IDI4Ny41MDc4MTIgMTA1LjQyNTc4MSAyODQuMTkxNDA2IEwgMTE0Ljc3NzM0NCAyNTQuMjAzMTI1IEwgMTI4LjQyOTY4OCAyNTQuMjAzMTI1IEwgMTEwLjAzMTI1IDMwNi44ODI4MTIgTCA5Ni43MzQzNzUgMzA2Ljg4MjgxMiBaIE0gNzguMjUzOTA2IDI1NC4yMDMxMjUgIi8+CjxwYXRoIGZpbGwtcnVsZT0ibm9uemVybyIgZmlsbD0iI0VEMUMyNCIgZmlsbC1vcGFjaXR5PSIxIiBkPSJNIDg2NC4zMzIwMzEgMTMwLjExMzI4MSBMIDc1Mi42NzE4NzUgMTgyLjEyODkwNiBDIDcxOC40Mjk2ODggMTk4LjA4MjAzMSA2NzguOTE0MDYyIDE5OC42MDE1NjIgNjQ0LjI4NTE1NiAxODMuNTc4MTI1IEwgNTQwLjIxODc1IDEzOC4wNTA3ODEgTCA0MjIuOTE0MDYyIDg2LjI4OTA2MiBDIDM4My41NDY4NzUgNjkuMjA3MDMxIDMzOC42NjQwNjIgNjkuODAwNzgxIDI5OS43NjU2MjUgODcuOTE3OTY5IEwgMTQ3Ljg5ODQzOCAxNTguNjY0MDYyIEwgMTkwLjQ0OTIxOSAxNTguNjY0MDYyIEwgMzA3LjM1MTU2MiAxMDQuMjA3MDMxIEMgMzQxLjU5Mzc1IDg4LjI1MzkwNiAzODEuMTA5Mzc1IDg3LjczNDM3NSA0MTUuNzEwOTM4IDEwMi43NDYwOTQgTCA1MzIuOTkyMTg4IDE1NC41IEwgNjM3LjEwOTM3NSAyMDAuMDUwNzgxIEMgNjU2LjE3MTg3NSAyMDguMzIwMzEyIDY3Ni41MjM0MzggMjEyLjQ0OTIxOSA2OTYuODY3MTg4IDIxMi40NDkyMTkgQyA3MTguNTM1MTU2IDIxMi40NDkyMTkgNzQwLjE5NTMxMiAyMDcuNzYxNzE5IDc2MC4yNTc4MTIgMTk4LjQxNzk2OSBMIDkwNi44ODY3MTkgMTMwLjExMzI4MSBaIE0gODY0LjMzMjAzMSAxMzAuMTEzMjgxICIvPgo8cGF0aCBmaWxsLXJ1bGU9Im5vbnplcm8iIGZpbGw9IiNGRkZGRkYiIGZpbGwtb3BhY2l0eT0iMSIgZD0iTSA3NzEuNDg4MjgxIDEzMC4xMTMyODEgTCA2NTkuODI4MTI1IDE4Mi4xMjg5MDYgQyA2MjUuNTg1OTM4IDE5OC4wODIwMzEgNTg2LjA3MDMxMiAxOTguNjAxNTYyIDU1MS40NDE0MDYgMTgzLjU3ODEyNSBMIDQ0Ny4zNzUgMTM4LjA1MDc4MSBMIDMzMC4wNzAzMTIgODYuMjg5MDYyIEMgMjkwLjcwMzEyNSA2OS4yMDcwMzEgMjQ1LjgyMDMxMiA2OS44MDA3ODEgMjA2LjkyMTg3NSA4Ny45MTc5NjkgTCA1NS4wNTQ2ODggMTU4LjY2NDA2MiBMIDk3LjYwNTQ2OSAxNTguNjY0MDYyIEwgMjE0LjUwNzgxMiAxMDQuMjA3MDMxIEMgMjQ4Ljc1IDg4LjI1MzkwNiAyODguMjYxNzE5IDg3LjczNDM3NSAzMjIuODY3MTg4IDEwMi43NDYwOTQgTCA0NDAuMTQ4NDM4IDE1NC41IEwgNTQ0LjI2NTYyNSAyMDAuMDUwNzgxIEMgNTYzLjMyODEyNSAyMDguMzIwMzEyIDU4My42Nzk2ODggMjEyLjQ0OTIxOSA2MDQuMDIzNDM4IDIxMi40NDkyMTkgQyA2MjUuNjkxNDA2IDIxMi40NDkyMTkgNjQ3LjM1MTU2MiAyMDcuNzYxNzE5IDY2Ny40MTQwNjIgMTk4LjQxNzk2OSBMIDgxNC4wNDI5NjkgMTMwLjExMzI4MSBaIE0gNzcxLjQ4ODI4MSAxMzAuMTEzMjgxICIvPgo8L3N2Zz4K" alt="Equipe Villarinho">
+    <p>Guia da equipe para o IRONMAN 70.3 Aracaju 2026, atualizado em 20/10/2026. Programação, percursos e regras conforme a Unlimited Sports, sujeitos a alteração.</p>
+    <div class="tema" role="group" aria-label="Tema">
+      <button type="button" data-th="light">Claro</button><button type="button" data-th="dark">Escuro</button><button type="button" data-th="auto">Auto</button>
+    </div>
   </div>
 </footer>
 
 <script>
+// tema
+(function(){
+  var root=document.documentElement,K='vv-tema',v='auto';
+  try{v=localStorage.getItem(K)||'auto'}catch(e){}
+  function set(t){if(t==='auto')root.removeAttribute('data-theme');else root.setAttribute('data-theme',t);
+    document.querySelectorAll('.tema button').forEach(function(b){b.setAttribute('aria-pressed',b.dataset.th===t?'true':'false')});
+    try{localStorage.setItem(K,t)}catch(e){}}
+  set(v);
+  document.querySelectorAll('.tema button').forEach(function(b){b.addEventListener('click',function(){set(b.dataset.th)})});
+})();
+
+// abas
 var tabs=document.querySelectorAll('.tab'),secs=document.querySelectorAll('section');
 tabs.forEach(function(t){t.addEventListener('click',function(){
   tabs.forEach(function(x){x.classList.remove('on')});
@@ -581,11 +632,11 @@ tabs.forEach(function(t){t.addEventListener('click',function(){
   window.scrollTo({top:document.querySelector('nav').offsetTop,behavior:'smooth'});
 })});
 
-// contagem regressiva (previsão de largada 5h30, horário de Aracaju)
-var alvo=new Date('2026-11-29T05:30:00-03:00').getTime();
+// contagem regressiva até a largada dos amadores (5h15, horário de Aracaju)
+var alvo=new Date('2026-11-29T05:15:00-03:00').getTime();
 function tick(){
   var d=alvo-Date.now();
-  if(d<=0){document.getElementById('count').innerHTML='<div><div class="n">É hoje</div><div class="l">bora</div></div>';return}
+  if(d<=0){document.getElementById('count').innerHTML='<div><div class="n">É hoje</div><div class="l">Vamos</div></div>';return}
   document.getElementById('cd').textContent=Math.floor(d/864e5);
   document.getElementById('ch').textContent=Math.floor(d%864e5/36e5);
   document.getElementById('cm').textContent=Math.floor(d%36e5/6e4);
@@ -593,7 +644,7 @@ function tick(){
 tick();setInterval(tick,3e4);
 
 // checklist
-var KEY='villarinho-aracaju703-v1',st={};
+var KEY='villarinho-aracaju703-v2',st={};
 try{st=JSON.parse(localStorage.getItem(KEY)||'{}')}catch(e){st={}}
 function save(){try{localStorage.setItem(KEY,JSON.stringify(st))}catch(e){}}
 var cks=document.querySelectorAll('.ck');
@@ -609,16 +660,16 @@ function paint(){
   });
 }
 cks.forEach(function(c){c.addEventListener('click',function(){st[c.dataset.k]=!st[c.dataset.k];save();paint()})});
-document.getElementById('ckreset').addEventListener('click',function(){if(confirm('Limpar todos os itens marcados?')){st={};save();paint()}});
+document.getElementById('ckreset').addEventListener('click',function(){st={};save();paint()});
 paint();
 
 // busca de atletas
 var bq=document.getElementById('buscabib');
-if(bq){bq.addEventListener('input',function(){
-  var t=bq.value.toLowerCase().trim(),v=0;
+bq.addEventListener('input',function(){
+  var t=bq.value.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'').trim(),v=0;
   document.querySelectorAll('#listabib .bib').forEach(function(l){var ok=l.dataset.b.indexOf(t)>-1;l.style.display=ok?'':'none';if(ok)v++;});
   document.getElementById('vaziobib').style.display=v?'none':'block';
-})}
+});
 
 // copiar cupom
 document.querySelectorAll('.cd').forEach(function(b){b.addEventListener('click',function(){
@@ -626,5 +677,6 @@ document.querySelectorAll('.cd').forEach(function(b){b.addEventListener('click',
   if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(b.dataset.c).then(fim,fim)}else{fim()}
 })});
 </script>
+<script src="https://strava-embeds.com/embed.js"></script>
 </body>
 </html>
