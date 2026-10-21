@@ -138,6 +138,10 @@ h3{font-family:var(--font-display);font-weight:700;font-size:19px;margin:36px 0 
 .ev .h{font-family:var(--font-display);font-weight:700;font-size:14px;color:var(--ink-muted);padding-top:1px;font-variant-numeric:tabular-nums}
 .ev .t{font-weight:600;font-size:15px}
 .ev .l{font-size:13.5px;color:var(--ink-muted);margin-top:2px}
+.ev.eq{background:var(--surface-raised);border-left:4px solid var(--ink);padding-left:12px;margin-left:-16px;border-radius:0 var(--radius-md) var(--radius-md) 0;border-bottom-color:transparent;margin-bottom:4px}
+.ev.eq .h{color:var(--ink)}
+.tag.eqt::before{background:var(--accent)}
+.card.eqp{border-left:4px solid var(--accent)}
 .ev.hot{background:var(--surface-raised);border-left:4px solid var(--accent);padding-left:12px;margin-left:-16px;border-radius:0 var(--radius-md) var(--radius-md) 0;border-bottom-color:transparent;margin-bottom:4px}
 .ev.hot .h{color:var(--ink)}
 .janelas{display:grid;grid-template-columns:repeat(2,1fr);gap:6px;margin-top:8px}
@@ -281,21 +285,29 @@ footer p{font-size:12.5px;line-height:1.55;max-width:52ch}
   <div class="card" style="margin-top:22px">
     <span class="tag obr">Obrigatório</span>
     <p class="small" style="margin:12px 0 10px">Para retirar o kit você precisa <b style="font-size:inherit">cadastrar a biometria facial</b> e agendar o horário da entrega de kits.</p>
-    <p class="small" style="margin:0 0 10px"><b style="font-size:inherit">Taxa da federação local (day use): só para quem não é federado.</b> Se você já é federado, não paga. Leve o comprovante de federação para apresentar na retirada do kit.</p>
+    <p class="small" style="margin:0 0 10px"><b style="font-size:inherit">Taxa da federação local (day use): só para quem não é federado.</b> Se você já é federado, não paga nada: a organização confere pelo CPF na retirada do kit.</p>
     <p class="tiny" style="margin-bottom:12px">A organização ainda marca os links como "em breve". Avisamos no grupo assim que abrirem.</p>
     <a class="btn btn-principal" href="https://unlimitedsports.com.br/ironman-70-3-sergipe/programacao-ironman-70-3-sergipe/" target="_blank" rel="noopener">Abrir a página oficial</a>
   </div>
 
+  <h3>Agenda da Equipe Villarinho</h3>
+  <div class="card eqp">
+    <div class="lbl">Sex 27/11 · 8h</div>
+    <b>Natação da equipe no local da prova</b>
+    <p class="muted small" style="margin:4px 0 12px">Vamos nadar juntos na Foz do Vaza-Barris, ao lado da Ponte Joel Silveira, para todo mundo conhecer a água, a largada e a saída para a T1 antes do domingo. Venha de touca da Villarinho para a foto da equipe.</p>
+    <a class="lk" href="https://www.google.com/maps/search/?api=1&query=Ponte+Joel+Silveira+Mosqueiro+Aracaju" target="_blank" rel="noopener">Ver o local no mapa</a>
+  </div>
+
   <h3>Grupo da equipe</h3>
   <div class="card">
-    <p class="small muted" style="margin-bottom:10px">Treino de reconhecimento, ponto de encontro e jantar da equipe são combinados no grupo de WhatsApp da prova.</p>
+    <p class="small muted" style="margin-bottom:10px">Avisos, ponto de encontro e jantar da equipe são combinados no grupo de WhatsApp da prova.</p>
     <a class="btn btn-sec" href="https://chat.whatsapp.com/BxxInN30ISqBThZrU9bmBo?mode=gi_t" target="_blank" rel="noopener">Entrar no grupo</a>
   </div>
 
   <h3>Em quatro linhas</h3>
   <div class="card">
     <p class="small"><b style="font-size:inherit">Qui 26/11</b>: Village abre às 14h e começa a entrega de kits, com horário agendado.</p>
-    <p class="small" style="margin-top:9px"><b style="font-size:inherit">Sex 27/11</b>: kits das 9h às 18h. Melhor dia para resolver tudo.</p>
+    <p class="small" style="margin-top:9px"><b style="font-size:inherit">Sex 27/11</b>: natação da equipe às 8h no local da prova e kits das 9h às 18h. Melhor dia para resolver tudo.</p>
     <p class="small" style="margin-top:9px"><b style="font-size:inherit">Sáb 28/11</b>: kits só até 12h. Sacola vermelha na T2 das 10h às 18h e bike na T1 das 14h às 18h, na janela do seu número.</p>
     <p class="small" style="margin-top:9px"><b style="font-size:inherit">Dom 29/11</b>: ônibus 3h a 4h10, T1 3h30 a 5h, largada 5h15 a 5h35, check-out 12h a 15h e premiação 17h30.</p>
   </div>
@@ -362,6 +374,7 @@ footer p{font-size:12.5px;line-height:1.55;max-width:52ch}
 
   <div class="dia">
     <div class="dia-h"><span class="d">Sex 27/11</span></div>
+    <div class="ev eq"><span class="h">8h</span><div><div class="t">Natação da equipe no local da prova <span class="tag eqt">Villarinho</span></div><div class="l">Foz do Vaza-Barris, ao lado da Ponte Joel Silveira. Para conhecer a água, a largada e a saída para a T1.</div></div></div>
     <div class="ev"><span class="h">9h–19h</span><div><div class="t">IRONMAN Village aberto</div><div class="l">Praia de Atalaia</div></div></div>
     <div class="ev"><span class="h">9h–18h</span><div><div class="t">Entrega de kits, com horário agendado</div><div class="l">IRONMAN Village</div></div></div>
     <div class="ev"><span class="h">10h–11h</span><div><div class="t">1º plantão de dúvidas do congresso técnico</div><div class="l">SAC, no Village. Para amadores.</div></div></div>
@@ -408,7 +421,7 @@ footer p{font-size:12.5px;line-height:1.55;max-width:52ch}
     <div class="gh"><span class="tag obr">Documentos</span><span class="gc"></span></div>
     <div class="ck" data-k="d1"><span class="bx"></span><span class="tx">Documento oficial com foto</span></div>
     <div class="ck" data-k="d2"><span class="bx"></span><span class="tx">Horário da entrega de kits agendado</span></div>
-    <div class="ck" data-k="d3"><span class="bx"></span><span class="tx">Taxa da federação paga ou comprovante de federação separado<span class="nt">A taxa é só para quem não é federado</span></span></div>
+    <div class="ck" data-k="d3"><span class="bx"></span><span class="tx">Taxa da federação paga, se você não for federado<span class="nt">Federado não paga: a organização confere pelo CPF</span></span></div>
     <div class="ck" data-k="d4"><span class="bx"></span><span class="tx">Biometria facial cadastrada</span></div>
     <div class="ck" data-k="d5"><span class="bx"></span><span class="tx">Congresso técnico assistido</span></div>
     <div class="ck" data-k="d6"><span class="bx"></span><span class="tx">Ônibus da madrugada comprado no kit<span class="nt">Saída da T2 das 3h às 4h10</span></span></div>
@@ -469,7 +482,7 @@ footer p{font-size:12.5px;line-height:1.55;max-width:52ch}
   <p class="h2sub">Do kit à retirada da bike.</p>
 
   <div class="card">
-    <div class="passo"><span class="n">1</span><div><h4>Antes de viajar</h4><p>Agende a entrega de kits e cadastre a biometria facial. Se você não é federado, pague a taxa da federação; se já é, leve o comprovante. Os links abrem perto da prova e avisamos no grupo.</p></div></div>
+    <div class="passo"><span class="n">1</span><div><h4>Antes de viajar</h4><p>Agende a entrega de kits e cadastre a biometria facial. Se você não é federado, pague a taxa da federação. Federado não paga, a organização confere pelo CPF. Os links abrem perto da prova e avisamos no grupo.</p></div></div>
     <div class="passo"><span class="n">2</span><div><h4>Retire o kit no Village</h4><p>Qui das 14h às 18h, sex das 9h às 18h ou sáb só até 12h, na Praia de Atalaia. Leve documento com foto e já compre o ônibus de domingo.</p></div></div>
     <div class="passo"><span class="n">3</span><div><h4>Sábado: sacola vermelha e bike</h4><p>Entregue a sacola vermelha na T2, na Atalaia, entre 10h e 18h. Depois leve a bike identificada para a T1, no Mosqueiro, na janela do seu número entre 14h e 18h.</p></div></div>
     <div class="passo"><span class="n">4</span><div><h4>Domingo de madrugada</h4><p>Ônibus da T2 entre 3h e 4h10. A T1 abre às 3h30 e fecha às 5h. Sacola azul ao lado da bike, sacola branca na tenda. Largada dos amadores entre 5h15 e 5h35.</p></div></div>
@@ -499,15 +512,16 @@ footer p{font-size:12.5px;line-height:1.55;max-width:52ch}
 <!-- DICAS -->
 <section id="dicas">
   <span class="rotulo">Dicas dos treinadores</span>
-  <h2>Seis cuidados para Aracaju</h2>
+  <h2>Sete cuidados para Aracaju</h2>
   <p class="h2sub">O que mais faz diferença nesta prova.</p>
   <div class="card">
     <div class="dica"><span class="i">01</span><p>Aracaju é calor e umidade. Hidratação começa na semana: ande com a sua garrafa durante o dia e reforce o sal nos treinos e na prova.</p></div>
     <div class="dica"><span class="i">02</span><p>Na corrida, use todos os postos: água na cabeça, gelo se houver, e beba desde o km 1. Na orla quase não tem sombra.</p></div>
     <div class="dica"><span class="i">03</span><p>Treine sem roupa de borracha. Com a água quente ela costuma ser proibida e quem nunca nadou forte sem ela sente na saída.</p></div>
-    <div class="dica"><span class="i">04</span><p>A logística é o ponto mais delicado: bike no Mosqueiro, resto na Atalaia, ônibus às 3h. Resolva o sábado com calma e durma cedo.</p></div>
-    <div class="dica"><span class="i">05</span><p>Nada de novo no dia da prova. Nada de estrear tênis, gel, roupa ou peça comprada na expo. Testou no treino? Pode usar.</p></div>
-    <div class="dica"><span class="i">06</span><p>Venha de uniforme da Villarinho. Ajuda a torcida a achar você, gritar e fazer as fotos da equipe.</p></div>
+    <div class="dica"><span class="i">04</span><p>Fique em hotel perto da T2, na Orla de Atalaia. Ali estão o Village, a chegada e a saída do ônibus de domingo, então dá para fazer quase tudo a pé. A T1, no Mosqueiro, é longe de tudo e não vale a pena se hospedar perto dela.</p></div>
+    <div class="dica"><span class="i">05</span><p>A logística é o ponto mais delicado: bike no Mosqueiro, resto na Atalaia, ônibus às 3h. Resolva o sábado com calma e durma cedo.</p></div>
+    <div class="dica"><span class="i">06</span><p>Nada de novo no dia da prova. Nada de estrear tênis, gel, roupa ou peça comprada na expo. Testou no treino? Pode usar.</p></div>
+    <div class="dica"><span class="i">07</span><p>Venha de uniforme da Villarinho. Ajuda a torcida a achar você, gritar e fazer as fotos da equipe.</p></div>
   </div>
 </section>
 
@@ -523,7 +537,7 @@ footer p{font-size:12.5px;line-height:1.55;max-width:52ch}
     <div class="cup"><div><b>Z2 Performance</b><div class="ad">Géis, carboidrato e hidratação</div></div><button class="cd" data-c="Z2VILLARINHO">Z2VILLARINHO</button></div>
     <div class="cup"><div><b>TRI Designs</b><div class="ad">Roupas de borracha e produtos de triathlon</div></div><button class="cd" data-c="VILLARINHO">VILLARINHO</button></div>
     <div class="cup"><div><b>WOOM</b><div class="ad">Vestuário de corrida e triathlon</div></div><button class="cd" data-c="VILLARINHO10">VILLARINHO10</button></div>
-    <div class="cup"><div><b>FILA</b><div class="ad">Tênis e vestuário</div></div><button class="cd" data-c="VILLARINHO15">VILLARINHO15</button></div>
+    <div class="cup"><div><b>FILA</b><div class="ad">Tênis e vestuário</div></div><button class="cd" data-c="VILLARINHO">VILLARINHO</button></div>
   </div>
 
   <h3>Mecânico, fisio e transporte</h3>
